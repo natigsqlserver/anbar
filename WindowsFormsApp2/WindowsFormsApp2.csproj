@@ -35,18 +35,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.CodeParser.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Data.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.DataAccess.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Xpo.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -130,6 +130,18 @@
       <DependentUpon>Anbarda_obyekte_gonderilenler.cs</DependentUpon>
     </Compile>
     <Compile Include="anbarobyektcrud.cs" />
+    <Compile Include="ANBAR_GALIGI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ANBAR_GALIGI.Designer.cs">
+      <DependentUpon>ANBAR_GALIGI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ANBAR_MENFEET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ANBAR_MENFEET.Designer.cs">
+      <DependentUpon>ANBAR_MENFEET.cs</DependentUpon>
+    </Compile>
     <Compile Include="avtorizasiya.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,6 +190,12 @@
     </Compile>
     <Compile Include="MEHSUL_ALISI_LAYOUT.Designer.cs">
       <DependentUpon>MEHSUL_ALISI_LAYOUT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MEHSUL_ALIS_HESABATI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEHSUL_ALIS_HESABATI.Designer.cs">
+      <DependentUpon>MEHSUL_ALIS_HESABATI.cs</DependentUpon>
     </Compile>
     <Compile Include="MUSTERI_AXTAR.cs">
       <SubType>Form</SubType>
@@ -274,12 +292,6 @@
     </Compile>
     <Compile Include="MEHSUL_ALİSİ.Designer.cs">
       <DependentUpon>MEHSUL_ALİSİ.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MEHSUL_GAYTARMA.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MEHSUL_GAYTARMA.Designer.cs">
-      <DependentUpon>MEHSUL_GAYTARMA.cs</DependentUpon>
     </Compile>
     <Compile Include="MEHSUL_GAYTARMA_AXTARIS_CRUD.cs" />
     <Compile Include="MUSTERILER.cs">
@@ -450,6 +462,12 @@
     <EmbeddedResource Include="Anbarda_obyekte_gonderilenler.resx">
       <DependentUpon>Anbarda_obyekte_gonderilenler.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ANBAR_GALIGI.resx">
+      <DependentUpon>ANBAR_GALIGI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ANBAR_MENFEET.resx">
+      <DependentUpon>ANBAR_MENFEET.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="avtorizasiya.resx">
       <DependentUpon>avtorizasiya.cs</DependentUpon>
     </EmbeddedResource>
@@ -492,11 +510,11 @@
     <EmbeddedResource Include="MEHSUL_ALISI_LAYOUT.resx">
       <DependentUpon>MEHSUL_ALISI_LAYOUT.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MEHSUL_ALIS_HESABATI.resx">
+      <DependentUpon>MEHSUL_ALIS_HESABATI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MEHSUL_ALİSİ.resx">
       <DependentUpon>MEHSUL_ALİSİ.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MEHSUL_GAYTARMA.resx">
-      <DependentUpon>MEHSUL_GAYTARMA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MUSTERILER.resx">
       <DependentUpon>MUSTERILER.cs</DependentUpon>

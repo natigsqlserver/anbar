@@ -9157,7 +9157,7 @@
     </member>
     <member name="M:DevExpress.Xpo.Session.Delete(System.Collections.ICollection)">
       <summary>
-        <para>Deletes the specified persistent objects and their aggregated objects from the data store.</para>
+        <para>Deletes persistent objects and their aggregated objects from the data store.</para>
       </summary>
       <param name="objects">A collection of persistent objects to delete from the data store.</param>
     </member>

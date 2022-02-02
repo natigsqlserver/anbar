@@ -1304,11 +1304,23 @@
       <param name="pageNumber">An integer value that specifies the page number where the form field will be created.</param>
       <param name="rect">A <see cref="T:DevExpress.Pdf.PdfRectangle"/> object that represents a rectangle inside which check box field is located on a page.</param>
     </member>
+    <member name="M:DevExpress.Pdf.PdfAcroFormCheckBoxField.AddWidget(DevExpress.Pdf.PdfRectangle)">
+      <summary />
+      <param name="rectangle"></param>
+    </member>
+    <member name="M:DevExpress.Pdf.PdfAcroFormCheckBoxField.AddWidget(System.Int32,DevExpress.Pdf.PdfRectangle)">
+      <summary />
+      <param name="pageNumber"></param>
+      <param name="rectangle"></param>
+    </member>
     <member name="P:DevExpress.Pdf.PdfAcroFormCheckBoxField.ButtonStyle">
       <summary>
         <para>Specifies a button style which is applied to a check box field.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Pdf.PdfAcroFormButtonStyle"/> enumeration value that determines the button style applied to a check box field.</value>
+    </member>
+    <member name="M:DevExpress.Pdf.PdfAcroFormCheckBoxField.ClearWidgets">
+      <summary />
     </member>
     <member name="P:DevExpress.Pdf.PdfAcroFormCheckBoxField.ExportValue">
       <summary>
@@ -1346,6 +1358,15 @@
       <param name="displayValue">A <see cref="T:System.String"/> that is a value to be added to a combo box and list box.</param>
       <param name="exportValue">A <see cref="T:System.String"/> that is an export value.</param>
     </member>
+    <member name="M:DevExpress.Pdf.PdfAcroFormChoiceField.AddWidget(DevExpress.Pdf.PdfRectangle)">
+      <summary />
+      <param name="rectangle"></param>
+    </member>
+    <member name="M:DevExpress.Pdf.PdfAcroFormChoiceField.AddWidget(System.Int32,DevExpress.Pdf.PdfRectangle)">
+      <summary />
+      <param name="pageNumber"></param>
+      <param name="rectangle"></param>
+    </member>
     <member name="M:DevExpress.Pdf.PdfAcroFormChoiceField.ClearSelection">
       <summary>
         <para>Clears the combo box or list box selection.</para>
@@ -1355,6 +1376,9 @@
       <summary>
         <para>Removes all values to be added to the list box and combo box.</para>
       </summary>
+    </member>
+    <member name="M:DevExpress.Pdf.PdfAcroFormChoiceField.ClearWidgets">
+      <summary />
     </member>
     <member name="M:DevExpress.Pdf.PdfAcroFormChoiceField.SelectValue(System.String)">
       <summary>
@@ -1791,6 +1815,12 @@
       <param name="name">A <see cref="T:System.String"/> that specifies the name of a radio button.</param>
       <param name="rect">A <see cref="T:DevExpress.Pdf.PdfRectangle"/> object that represents a rectangle inside which a radio button is located on a page.</param>
     </member>
+    <member name="M:DevExpress.Pdf.PdfAcroFormRadioGroupField.AddButton(System.String,System.Int32,DevExpress.Pdf.PdfRectangle)">
+      <summary />
+      <param name="name"></param>
+      <param name="pageNumber"></param>
+      <param name="rect"></param>
+    </member>
     <member name="P:DevExpress.Pdf.PdfAcroFormRadioGroupField.ButtonStyle">
       <summary>
         <para>Specifies the style that defines the appearance of a radio button within a radio group field.</para>
@@ -1902,6 +1932,18 @@
       <param name="name">A <see cref="T:System.String"/> that specifies the name of text box field.</param>
       <param name="pageNumber">An integer value that specifies the page number where the form field will be created.</param>
       <param name="rectangle">A <see cref="T:DevExpress.Pdf.PdfRectangle"/> object that represents a rectangle in user coordinate system used to place a text box field.</param>
+    </member>
+    <member name="M:DevExpress.Pdf.PdfAcroFormTextBoxField.AddWidget(DevExpress.Pdf.PdfRectangle)">
+      <summary />
+      <param name="rectangle"></param>
+    </member>
+    <member name="M:DevExpress.Pdf.PdfAcroFormTextBoxField.AddWidget(System.Int32,DevExpress.Pdf.PdfRectangle)">
+      <summary />
+      <param name="pageNumber"></param>
+      <param name="rectangle"></param>
+    </member>
+    <member name="M:DevExpress.Pdf.PdfAcroFormTextBoxField.ClearWidgets">
+      <summary />
     </member>
     <member name="P:DevExpress.Pdf.PdfAcroFormTextBoxField.MaxLength">
       <summary>
@@ -2149,9 +2191,9 @@
     </member>
     <member name="P:DevExpress.Pdf.PdfAnnotation.Flags">
       <summary>
-        <para>Gets a set of flags specifying various characteristics of the annotation.</para>
+        <para>Gets or sets flags that specify various characteristics of the annotation.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Pdf.PdfAnnotationFlags"/> object that represents a set of annotation flags.</value>
+      <value>A set of annotation flags.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfAnnotation.Modified">
       <summary>
@@ -2340,6 +2382,21 @@
       </summary>
       <value>A double value that is the vertical corner radius of the annotation’s border.</value>
     </member>
+    <member name="T:DevExpress.Pdf.PdfAnnotationBorderEffectStyle">
+      <summary>
+        <para>Lists values that specify the effect applied to the annotation border.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfAnnotationBorderEffectStyle.CloudyEffect">
+      <summary>
+        <para>The border appears “cloudy”– the border is drawn as a series of convex curved line segments.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Pdf.PdfAnnotationBorderEffectStyle.NoEffect">
+      <summary>
+        <para>No effect is applied.</para>
+      </summary>
+    </member>
     <member name="T:DevExpress.Pdf.PdfAnnotationBorderStyle">
       <summary>
         <para>Contains style settings of the annotation’s border.</para>
@@ -2451,6 +2508,12 @@
       </summary>
       <value>The annotation contents.</value>
     </member>
+    <member name="P:DevExpress.Pdf.PdfAnnotationFacade.Flags">
+      <summary>
+        <para>Gets or sets flags that specify various characteristics of the annotation.</para>
+      </summary>
+      <value>A set of annotation flags</value>
+    </member>
     <member name="M:DevExpress.Pdf.PdfAnnotationFacade.Flatten">
       <summary>
         <para>Flattens the annotation.</para>
@@ -2492,7 +2555,7 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfAnnotationFlags">
       <summary>
-        <para>Lists the values specifying various characteristics of the annotation.</para>
+        <para>Lists the values specifying various characteristics of the annotation, signature form field, or widget annotation.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfAnnotationFlags.Hidden">
@@ -2854,9 +2917,9 @@
     </member>
     <member name="P:DevExpress.Pdf.PdfBookmark.Destination">
       <summary>
-        <para>Gets or sets a destination (a particular view of a document) to which a bookmark is referred to.</para>
+        <para>Gets or sets a destination with which a bookmark is associated.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Pdf.PdfDestination"/> object that is a bookmark destination.</value>
+      <value>A destination.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfBookmark.IsBold">
       <summary>
@@ -2890,12 +2953,12 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfBorderStyle">
       <summary>
-        <para>Lists values used to specify the widget annotation’s border style.</para>
+        <para>Lists values used to specify the annotation’s and widget annotation’s border style.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfBorderStyle.Beveled">
       <summary>
-        <para>A 3D outset border.</para>
+        <para>A 3D outset border. Available for widget annotations only.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfBorderStyle.Dash">
@@ -2920,7 +2983,7 @@
     </member>
     <member name="F:DevExpress.Pdf.PdfBorderStyle.Inset">
       <summary>
-        <para>A 3D inset border.</para>
+        <para>A 3D inset border. Available for widget annotations only.</para>
       </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfBorderStyle.Solid">
@@ -3672,20 +3735,20 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfDestination">
       <summary>
-        <para>Represents a destination (a particular view of a document) to which a document target (e.g. a bookmark) is referred to.</para>
+        <para>The base class for destinations – references to a page with specific view parameters.</para>
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfDestination.Page">
       <summary>
-        <para>Gets the page of a document where the corresponding destination is located.</para>
+        <para>Gets the document page where the destination is located.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Pdf.PdfPage"/> object that is the page where the destination is located.</value>
+      <value>The page where the destination is located.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfDestination.PageIndex">
       <summary>
         <para>Gets the zero-based index of a page where the destination is located.</para>
       </summary>
-      <value>An integer value that is the zero-based index of the destination page.</value>
+      <value>The destination page index.</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfDirection">
       <summary>
@@ -4638,36 +4701,36 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfFitBBoxDestination">
       <summary>
-        <para>Represents a destination that displays the page with its contents magnified just enough to fit its bounding box entirely within the window both horizontally and vertically.</para>
+        <para>A destination that displays a page’s bounding box that fits the document window.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Pdf.PdfFitBBoxDestination.#ctor(DevExpress.Pdf.PdfPage)">
       <summary>
-        <para>Initializes a new instance of the <see cref="T:DevExpress.Pdf.PdfFitBBoxDestination"/> class with the page that contains the content magnified just enough to fit its bounding box entirely within the window.</para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Pdf.PdfFitBBoxDestination"/> class with the the specified parameters.</para>
       </summary>
-      <param name="page">A <see cref="T:DevExpress.Pdf.PdfPage"/> object that is the PDF page.</param>
+      <param name="page">The page to which the destination should refer.</param>
     </member>
     <member name="T:DevExpress.Pdf.PdfFitBBoxHorizontallyDestination">
       <summary>
-        <para>Represents a destination that displays the page with its vertical <see cref="P:DevExpress.Pdf.PdfFitBBoxHorizontallyDestination.Top"/> coordinate positioned at the top edge of the window and the contents magnified just enough to fit the entire width of its bounding box within the window.</para>
+        <para>A destination that positions a specific Y coordinate at the top left corner of the document window, and zooms a page’s bounding box so that it fits the window horizontally.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Pdf.PdfFitBBoxHorizontallyDestination.#ctor(DevExpress.Pdf.PdfPage,System.Nullable{System.Double})">
       <summary>
-        <para>Initializes a new instance of the <see cref="T:DevExpress.Pdf.PdfFitBBoxHorizontallyDestination"/> class with the specified page and the top vertical coordinate positioned at the top edge of the window.</para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Pdf.PdfFitBBoxHorizontallyDestination"/> class with the specified parameters.</para>
       </summary>
-      <param name="page">A <see cref="T:DevExpress.Pdf.PdfPage"/> object that is the PDF page.</param>
-      <param name="top">A nullable double value that is the top vertical page coordinate.</param>
+      <param name="page">The page to which the destination should refer.</param>
+      <param name="top">the Y coordinate that is positioned at the top left corner of the document window.</param>
     </member>
     <member name="P:DevExpress.Pdf.PdfFitBBoxHorizontallyDestination.Top">
       <summary>
-        <para>Gets the top vertical page coordinate positioned at the top edge of the window.</para>
+        <para>Gets the Y coordinate that is positioned at the top left corner of the document window.</para>
       </summary>
-      <value>A nullable double value that it the vertical page coordinate.</value>
+      <value>The Y coordinate in the user coordinate system.</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfFitBBoxVerticallyDestination">
       <summary>
-        <para>Represents a destination that displays the page with the horizontal <see cref="P:DevExpress.Pdf.PdfFitBBoxVerticallyDestination.Left"/> coordinate positioned at the left edge of the window with its contents magnified just enough to fit the entire height of its bounding box within the window.</para>
+        <para>A destination that positions a specific X coordinate at the top left corner of the document window, and zooms a page’s bounding box so that it fits the window vertically.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Pdf.PdfFitBBoxVerticallyDestination.#ctor(DevExpress.Pdf.PdfPage,System.Nullable{System.Double})">
@@ -4679,74 +4742,74 @@
     </member>
     <member name="P:DevExpress.Pdf.PdfFitBBoxVerticallyDestination.Left">
       <summary>
-        <para>Gets the left horizontal coordinate positioned at the left edge of the window.</para>
+        <para>Gets the X coordinate that is positioned at at the top left corner of the document window.</para>
       </summary>
-      <value>A nullable double value that it the left horizontal coordinate.</value>
+      <value>The X coordinate in the user coordinate system.</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfFitDestination">
       <summary>
-        <para>Represents a destination that displays the page with its contents magnified just enough to fit the entire page within the window both horizontally and vertically.</para>
+        <para>A destination that displays a page that fits the document window.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Pdf.PdfFitDestination.#ctor(DevExpress.Pdf.PdfPage)">
       <summary>
-        <para>Initializes a new instance of the <see cref="T:DevExpress.Pdf.PdfFitDestination"/> class with the page that contains the contents magnified just enough to fit the entire page within the window both horizontally and vertically.</para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Pdf.PdfFitDestination"/> class with the specified parameters.</para>
       </summary>
-      <param name="page">A <see cref="T:DevExpress.Pdf.PdfPage"/> object that is the PDF page.</param>
+      <param name="page">The page on which the destination should refer.</param>
     </member>
     <member name="T:DevExpress.Pdf.PdfFitHorizontallyDestination">
       <summary>
-        <para>Represents a destination that displays the page with the <see cref="P:DevExpress.Pdf.PdfFitHorizontallyDestination.Top"/> vertical coordinate positioned at the top edge of the window and the contents magnified just enough to fit the entire width of the page within the window.</para>
+        <para>A destination that positions a specific Y coordinate at the top left corner of the document window, and zooms a page so that it fits the window horizontally.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Pdf.PdfFitHorizontallyDestination.#ctor(DevExpress.Pdf.PdfPage,System.Nullable{System.Double})">
       <summary>
-        <para>Initializes a new instance of the <see cref="T:DevExpress.Pdf.PdfFitHorizontallyDestination"/> class with the specified page and the top vertical coordinate positioned at the top edge of the window.</para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Pdf.PdfFitHorizontallyDestination"/> class with the specified parameters.</para>
       </summary>
-      <param name="page">A <see cref="T:DevExpress.Pdf.PdfPage"/> object that is the PDF page with contents.</param>
-      <param name="top">A nullable double value that is the top vertical coordinate positioned at the top edge of the window.</param>
+      <param name="page">The page to which the destination should refer.</param>
+      <param name="top">the Y coordinate that is positioned at at the top left corner of the document window.</param>
     </member>
     <member name="P:DevExpress.Pdf.PdfFitHorizontallyDestination.Top">
       <summary>
-        <para>Gets the top vertical page coordinate positioned at the top edge of the window.</para>
+        <para>Gets the Y coordinate that is positioned at the top left corner of the document window.</para>
       </summary>
-      <value>A nullable double value that is the top vertical page coordinate.</value>
+      <value>The Y coordinate in the user coordinate system.</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfFitRectangleDestination">
       <summary>
-        <para>Represents a destination that displays the page with its contents magnified just enough to fit the <see cref="P:DevExpress.Pdf.PdfFitRectangleDestination.Rectangle"/> specified by the <see cref="P:DevExpress.Pdf.PdfRectangle.Left"/>, <see cref="P:DevExpress.Pdf.PdfRectangle.Bottom"/>, <see cref="P:DevExpress.Pdf.PdfRectangle.Right"/>, <see cref="P:DevExpress.Pdf.PdfRectangle.Top"/> coordinates entirely within the window both horizontally and vertically.</para>
+        <para>A destination that displays a specific page rectangle in the document window.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Pdf.PdfFitRectangleDestination.#ctor(DevExpress.Pdf.PdfPage,DevExpress.Pdf.PdfRectangle)">
       <summary>
-        <para>Initializes a new instance of the <see cref="T:DevExpress.Pdf.PdfFitRectangleDestination"/> class with the specified page and rectangle specified by the coordinates left, bottom, right, and top.</para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Pdf.PdfFitRectangleDestination"/> class with the specified parameters.</para>
       </summary>
-      <param name="page">A <see cref="T:DevExpress.Pdf.PdfPage"/> object that is the page with its contents.</param>
-      <param name="rectangle">A <see cref="T:DevExpress.Pdf.PdfRectangle"/> that is the rectangle specified by the coordinates left, bottom, right, and top.</param>
+      <param name="page">The page to which the destination should refer.</param>
+      <param name="rectangle">The rectangle to fit into the document window.</param>
     </member>
     <member name="P:DevExpress.Pdf.PdfFitRectangleDestination.Rectangle">
       <summary>
-        <para>Gets a rectangle specified by the coordinates left, bottom, right, and top to place the page entirely within the window both horizontally and vertically.</para>
+        <para>Gets a rectangle that is fit into the document window.</para>
       </summary>
-      <value>A <see cref="T:DevExpress.Pdf.PdfRectangle"/> that is a rectangle specified by the coordinates left, bottom, right, and top.</value>
+      <value>The rectangle in the user coordinate system.</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfFitVerticallyDestination">
       <summary>
-        <para>Represents a destination that displays the page with the horizontal <see cref="P:DevExpress.Pdf.PdfFitVerticallyDestination.Left"/> coordinate positioned at the left edge of the window  and the contents magnified just enough to fit the entire height of the page within the window.</para>
+        <para>A destination that positions a specific X coordinate at the top left corner of the document window, and zooms a page so that it fits the window vertically.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Pdf.PdfFitVerticallyDestination.#ctor(DevExpress.Pdf.PdfPage,System.Nullable{System.Double})">
       <summary>
-        <para>Initializes a new instance of the <see cref="T:DevExpress.Pdf.PdfFitVerticallyDestination"/> class with the specified page and the left horizontal coordinate positioned at the left edge of the window.</para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Pdf.PdfFitVerticallyDestination"/> class with the specified parameters.</para>
       </summary>
-      <param name="page">A <see cref="T:DevExpress.Pdf.PdfPage"/> object that is the PDF page with the contents.</param>
-      <param name="left">A nullable double value that is the left horizontal page coordinate.</param>
+      <param name="page">The page to which the destination should refer.</param>
+      <param name="left">The X coordinate that is positioned at at the top left corner of the document window.</param>
     </member>
     <member name="P:DevExpress.Pdf.PdfFitVerticallyDestination.Left">
       <summary>
-        <para>Gets the horizontal left coordinate positioned at the left edge of the window.</para>
+        <para>Gets the X coordinate that is positioned at at the top left corner of the document window.</para>
       </summary>
-      <value>A nullable double value that it the left horizontal coordinate.</value>
+      <value>The X coordinate in the user coordinate system.</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfFont">
       <summary>
@@ -5272,11 +5335,6 @@
       </summary>
       <returns>A <see cref="T:System.Collections.IEnumerator"/> for the <see cref="T:DevExpress.Pdf.PdfFormFieldFacade`2"/> instance.</returns>
     </member>
-    <member name="M:DevExpress.Pdf.PdfFormFieldFacade`2.RebuildAppearance">
-      <summary>
-        <para>Rebuilds the form field appearance.</para>
-      </summary>
-    </member>
     <member name="P:DevExpress.Pdf.PdfFormFieldFacade`2.Widgets">
       <summary>
         <para>Retrieves properties of each annotation widget related to the form field.</para>
@@ -5367,6 +5425,18 @@
       <summary>
         <para>Contains members used to manage free text annotations without access to their inner structure.</para>
       </summary>
+    </member>
+    <member name="P:DevExpress.Pdf.PdfFreeTextAnnotationFacade.BorderEffectIntensity">
+      <summary>
+        <para>Gets or sets the intensity of the border effect.</para>
+      </summary>
+      <value>Border effect intensity (from 0 to 2).</value>
+    </member>
+    <member name="P:DevExpress.Pdf.PdfFreeTextAnnotationFacade.BorderEffectStyle">
+      <summary>
+        <para>Gets or sets the effect applied to the annotation border.</para>
+      </summary>
+      <value>Indicates the border effect.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfFreeTextAnnotationFacade.BorderStyle">
       <summary>
@@ -5992,12 +6062,6 @@
         <para>Contains members used to manage line annotations without access to their inner structure.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Pdf.PdfLineAnnotationFacade.BorderStyle">
-      <summary>
-        <para>Gets or sets the line annotation border style.</para>
-      </summary>
-      <value>The annotation’s border style.</value>
-    </member>
     <member name="P:DevExpress.Pdf.PdfLineAnnotationFacade.LineEndStyle">
       <summary>
         <para>Gets or sets the style of the line’s end point.</para>
@@ -6236,36 +6300,6 @@
         <para>Gets the text displayed in the title bar of the annotation’s pop-up window when the annotation is open and active.</para>
       </summary>
       <value>A string value that is the annotation title.</value>
-    </member>
-    <member name="T:DevExpress.Pdf.PdfMarkupAnnotationBorderStyle">
-      <summary>
-        <para>Lists values used to specify the border style of the markup annotations</para>
-      </summary>
-    </member>
-    <member name="F:DevExpress.Pdf.PdfMarkupAnnotationBorderStyle.Dash">
-      <summary>
-        <para>A line that consists of dashes.</para>
-      </summary>
-    </member>
-    <member name="F:DevExpress.Pdf.PdfMarkupAnnotationBorderStyle.DashDot">
-      <summary>
-        <para>A border that consists of a repeating dash-dot pattern.</para>
-      </summary>
-    </member>
-    <member name="F:DevExpress.Pdf.PdfMarkupAnnotationBorderStyle.DashDotDot">
-      <summary>
-        <para>A border that consists of a repeating short dash-dot-dot pattern.</para>
-      </summary>
-    </member>
-    <member name="F:DevExpress.Pdf.PdfMarkupAnnotationBorderStyle.Dot">
-      <summary>
-        <para>A border that consists of dots.</para>
-      </summary>
-    </member>
-    <member name="F:DevExpress.Pdf.PdfMarkupAnnotationBorderStyle.Solid">
-      <summary>
-        <para>A solid border.</para>
-      </summary>
     </member>
     <member name="T:DevExpress.Pdf.PdfMarkupAnnotationComment">
       <summary>
@@ -7612,75 +7646,105 @@
       <param name="options">An object that contains clear content options.</param>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.CreateFitBBoxDestination">
-      <summary />
-      <returns></returns>
+      <summary>
+        <para>Creates a FitB destination.</para>
+      </summary>
+      <returns>The FitB destination.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.CreateFitBBoxHorizontallyDestination">
-      <summary />
-      <returns></returns>
+      <summary>
+        <para>Creates a FitBH destination. The coordinate of the document window’s top left corner is retained from the previous view.</para>
+      </summary>
+      <returns>The FitBH destination.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.CreateFitBBoxHorizontallyDestination(System.Single)">
-      <summary />
-      <param name="top"></param>
-      <returns></returns>
+      <summary>
+        <para>Creates a FitBH destination.</para>
+      </summary>
+      <param name="top">The Y coordinate that is positioned at the top left corner of the document window. Specify this coordinate in the user coordinate system.</param>
+      <returns>The FitBH destination.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.CreateFitBBoxVerticallyDestination">
-      <summary />
-      <returns></returns>
+      <summary>
+        <para>Creates a FitBV destination. The coordinate positioned window’s top left corner is retained from the previous view.</para>
+      </summary>
+      <returns>The FitBV destination on the page.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.CreateFitBBoxVerticallyDestination(System.Single)">
-      <summary />
-      <param name="left"></param>
-      <returns></returns>
+      <summary>
+        <para>Creates a FitBV destination.</para>
+      </summary>
+      <param name="left">The X coordinate that is positioned at the top left corner of the document window. Specify this coordinate in the user coordinate system.</param>
+      <returns>The FitBV destination.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.CreateFitDestination">
-      <summary />
-      <returns></returns>
+      <summary>
+        <para>Creates a Fit destination.</para>
+      </summary>
+      <returns>The Fit destination.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.CreateFitHorizontallyDestination">
-      <summary />
-      <returns></returns>
+      <summary>
+        <para>Creates a FitH destination. The coordinate of the document window’s top left corner is retained from the previous view.</para>
+      </summary>
+      <returns>The FitH destination.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.CreateFitHorizontallyDestination(System.Single)">
-      <summary />
-      <param name="top"></param>
-      <returns></returns>
+      <summary>
+        <para>Creates a FitH destination.</para>
+      </summary>
+      <param name="top">The Y coordinate that is positioned at the top left corner of the document window. Specify this coordinate in the user coordinate system.</param>
+      <returns>The FitH destination on the page.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.CreateFitRectangleDestination(DevExpress.Pdf.PdfRectangle)">
-      <summary />
-      <param name="rectangle"></param>
-      <returns></returns>
+      <summary>
+        <para>Creates a FitR destination.</para>
+      </summary>
+      <param name="rectangle">The rectangle that is fit into the document viewer window. Specify this rectangle in the user coordinate system.</param>
+      <returns>The FitR destination.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.CreateFitVerticallyDestination">
-      <summary />
-      <returns></returns>
+      <summary>
+        <para>Creates a FitV destination. The coordinate of the document window’s top left corner is retained from the previous view.</para>
+      </summary>
+      <returns>The destination on the page.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.CreateFitVerticallyDestination(System.Single)">
-      <summary />
-      <param name="left"></param>
-      <returns></returns>
+      <summary>
+        <para>Creates a FitV destination.</para>
+      </summary>
+      <param name="left">The X coordinate that is positioned at the left corner of the document window. Specify this coordinate in the user coordinate system.</param>
+      <returns>The FitV destination.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.CreateXYZDestination">
-      <summary />
-      <returns></returns>
+      <summary>
+        <para>Creates an XYZ destination. The coordinate of the document window’s top left corner and the zoom factor is retained from the previous view.</para>
+      </summary>
+      <returns>The XYZ destination.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.CreateXYZDestination(System.Single)">
-      <summary />
-      <param name="zoom"></param>
-      <returns></returns>
+      <summary>
+        <para>Creates an XYZ destination. The page coordinate of the document window’s top left corner is retained from the previous view.</para>
+      </summary>
+      <param name="zoom">The zoom factor.</param>
+      <returns>The XYZ destination.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.CreateXYZDestination(System.Single,System.Single)">
-      <summary />
-      <param name="destinationX"></param>
-      <param name="destinationY"></param>
-      <returns></returns>
+      <summary>
+        <para>Creates an XYZ destination. The zoom factor is retained from the previous view.</para>
+      </summary>
+      <param name="destinationX">The X page coordinate in user coordinate system.</param>
+      <param name="destinationY">The Y page coordinate in user coordinate system.</param>
+      <returns>The XYZ destination.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.CreateXYZDestination(System.Single,System.Single,System.Single)">
-      <summary />
-      <param name="destinationX"></param>
-      <param name="destinationY"></param>
-      <param name="zoom"></param>
-      <returns></returns>
+      <summary>
+        <para>Creates an XYZ destination.</para>
+      </summary>
+      <param name="destinationX">The X page coordinate in user coordinate system.</param>
+      <param name="destinationY">The Y page coordinate in user coordinate system.</param>
+      <param name="zoom">The zoom factor.</param>
+      <returns>The XYZ destination.</returns>
     </member>
     <member name="M:DevExpress.Pdf.PdfPageFacade.FlattenAnnotations">
       <summary>
@@ -8480,6 +8544,12 @@
         <para>Contains a set of properties used to manage path (line, polygon and polyline) annotations without access to their inner structure.</para>
       </summary>
     </member>
+    <member name="P:DevExpress.Pdf.PdfPathAnnotationFacade.BorderStyle">
+      <summary>
+        <para>Gets or sets the border style of the path annotation.</para>
+      </summary>
+      <value>Indicates the annotation border style.</value>
+    </member>
     <member name="P:DevExpress.Pdf.PdfPathAnnotationFacade.BorderWidth">
       <summary>
         <para>Gets or sets the width of the path annotation border.</para>
@@ -8632,67 +8702,27 @@
       </summary>
       <value>A <see cref="T:System.Double"/> value that is the PDF point’s Y coordinate.</value>
     </member>
-    <member name="T:DevExpress.Pdf.PdfPolygonAnnotationBorderStyle">
-      <summary>
-        <para>Lists border styles available for polygon, shape, and free text annotations.</para>
-      </summary>
-    </member>
-    <member name="F:DevExpress.Pdf.PdfPolygonAnnotationBorderStyle.Cloudy">
-      <summary>
-        <para>A cloudy border.</para>
-      </summary>
-    </member>
-    <member name="F:DevExpress.Pdf.PdfPolygonAnnotationBorderStyle.CloudyIntense">
-      <summary>
-        <para>An intensive cloudy border.</para>
-      </summary>
-    </member>
-    <member name="F:DevExpress.Pdf.PdfPolygonAnnotationBorderStyle.Dash">
-      <summary>
-        <para>A line that consists of dashes.</para>
-      </summary>
-    </member>
-    <member name="F:DevExpress.Pdf.PdfPolygonAnnotationBorderStyle.DashDot">
-      <summary>
-        <para>A border that consists of a repeating dash-dot pattern.</para>
-      </summary>
-    </member>
-    <member name="F:DevExpress.Pdf.PdfPolygonAnnotationBorderStyle.DashDotDot">
-      <summary>
-        <para>A border that consists of a repeating short dash-dot-dot pattern.</para>
-      </summary>
-    </member>
-    <member name="F:DevExpress.Pdf.PdfPolygonAnnotationBorderStyle.Dot">
-      <summary>
-        <para>A border that consists of dots.</para>
-      </summary>
-    </member>
-    <member name="F:DevExpress.Pdf.PdfPolygonAnnotationBorderStyle.Solid">
-      <summary>
-        <para>A solid border.</para>
-      </summary>
-    </member>
     <member name="T:DevExpress.Pdf.PdfPolygonAnnotationFacade">
       <summary>
         <para>Contains members used to manage polygon annotations without access to their inner structure.</para>
       </summary>
     </member>
-    <member name="P:DevExpress.Pdf.PdfPolygonAnnotationFacade.BorderStyle">
+    <member name="P:DevExpress.Pdf.PdfPolygonAnnotationFacade.BorderEffectIntensity">
       <summary>
-        <para>Gets or sets the style of the polygon annotation border.</para>
+        <para>Gets or sets the intensity of the border effect.</para>
       </summary>
-      <value>The annotation border style.</value>
+      <value>Border effect intensity (from 0 to 2).</value>
+    </member>
+    <member name="P:DevExpress.Pdf.PdfPolygonAnnotationFacade.BorderEffectStyle">
+      <summary>
+        <para>Gets or sets the effect applied to the annotation border.</para>
+      </summary>
+      <value>Indicates the border effect.</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfPolyLineAnnotationFacade">
       <summary>
         <para>Contains members used to manage polyline annotations without access to their inner structure.</para>
       </summary>
-    </member>
-    <member name="P:DevExpress.Pdf.PdfPolyLineAnnotationFacade.BorderStyle">
-      <summary>
-        <para>Gets or sets the style of the annotation border.</para>
-      </summary>
-      <value>Indicates the annotation border style.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfPolyLineAnnotationFacade.LineEndStyle">
       <summary>
@@ -9339,11 +9369,23 @@
         <para>Contains a set of properties used to manage shape (circle and square) annotations without access to their inner structure.</para>
       </summary>
     </member>
+    <member name="P:DevExpress.Pdf.PdfShapeAnnotationFacade.BorderEffectIntensity">
+      <summary>
+        <para>Gets or sets the intensity of the border effect.</para>
+      </summary>
+      <value>Border effect intensity (from 0 to 2).</value>
+    </member>
+    <member name="P:DevExpress.Pdf.PdfShapeAnnotationFacade.BorderEffectStyle">
+      <summary>
+        <para>Gets or sets the effect applied to the annotation border.</para>
+      </summary>
+      <value>Indicates the border effect.</value>
+    </member>
     <member name="P:DevExpress.Pdf.PdfShapeAnnotationFacade.BorderStyle">
       <summary>
         <para>Gets or sets the style of the annotation border.</para>
       </summary>
-      <value>The annotation border style.</value>
+      <value>Indicates the annotation border style.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfShapeAnnotationFacade.BorderWidth">
       <summary>
@@ -9936,7 +9978,9 @@
       </summary>
     </member>
     <member name="T:DevExpress.Pdf.PdfSound">
-      <summary />
+      <summary>
+        <para>A sound associated with a sound annotation.</para>
+      </summary>
     </member>
     <member name="M:DevExpress.Pdf.PdfSound.#ctor">
       <summary>
@@ -9944,50 +9988,74 @@
       </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfSound.BitsPerSample">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Specifies the number of bits per sample value per channel.</para>
+      </summary>
+      <value>The number of bits per sample value.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfSound.Data">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Gets or sets sound data.</para>
+      </summary>
+      <value>Sound data.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfSound.Encoding">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Gets or sets the encoding format of the sample data.</para>
+      </summary>
+      <value>Indicates the encoding format.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfSound.SamplingRate">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Gets or sets the sampling rate in samples per second.</para>
+      </summary>
+      <value>The sampling rate.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfSound.SoundChannels">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Gets or sets the number of sound channels.</para>
+      </summary>
+      <value>The number of sound channels. The default is 1.</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfSoundAnnotation">
-      <summary />
+      <summary>
+        <para>A sound annotations – a note that contains a sound recorded or imported form a file.</para>
+      </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfSoundAnnotation.FilterType">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Gets the type into which the annotation falls in the Type filter.</para>
+      </summary>
+      <value>An enumeration value that indicates the annotation type.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfSoundAnnotation.IconName">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Gets or sets the name of the sound annotation icon.</para>
+      </summary>
+      <value>The annotation icon name.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfSoundAnnotation.Sound">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Returns a sound attached to an annotation.</para>
+      </summary>
+      <value>A sound attached to the annotation.</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfSoundAnnotationFacade">
-      <summary />
+      <summary>
+        <para>Contains members used to manage sound annotations without access to their inner structure.</para>
+      </summary>
     </member>
     <member name="P:DevExpress.Pdf.PdfSoundAnnotationFacade.IconName">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Specifies the name of the annotation icon.</para>
+      </summary>
+      <value>The annotation icon name. Use the <see cref="T:DevExpress.Pdf.PdfSoundAnnotationIconName"/> class fields to specify one of the built-in icons.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfSoundAnnotationFacade.Sound">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Gets or sets sound data associated with the annotation.</para>
+      </summary>
+      <value>The sound associated with the annotation.</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfSoundAnnotationIconName">
       <summary>
@@ -10013,19 +10081,29 @@
       <value>The icon name.</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfSoundEncoding">
-      <summary />
+      <summary>
+        <para>Lists the encoding formats of sample data associated with the sound annotation.</para>
+      </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfSoundEncoding.ALaw">
-      <summary />
+      <summary>
+        <para>A-Law encoding.</para>
+      </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfSoundEncoding.MuLaw">
-      <summary />
+      <summary>
+        <para>m-Law encoding.</para>
+      </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfSoundEncoding.Raw">
-      <summary />
+      <summary>
+        <para>Unspecified or unsigned value (from 0 to 2B-1).</para>
+      </summary>
     </member>
     <member name="F:DevExpress.Pdf.PdfSoundEncoding.Signed">
-      <summary />
+      <summary>
+        <para>Twos-complement value.</para>
+      </summary>
     </member>
     <member name="T:DevExpress.Pdf.PdfSquareAnnotationFacade">
       <summary>
@@ -11094,6 +11172,12 @@
       </summary>
       <value>The character spacing. A positive number specifies expanded character spacing, a negative value specifies condensed spacing.</value>
     </member>
+    <member name="P:DevExpress.Pdf.PdfWidgetFacade.Flags">
+      <summary>
+        <para>Gets or sets flags that specify various characteristics of the widget annotation.</para>
+      </summary>
+      <value>A set of annotation flags</value>
+    </member>
     <member name="P:DevExpress.Pdf.PdfWidgetFacade.FontBold">
       <summary>
         <para>gets or sets whether to format widget text as bold.</para>
@@ -11248,35 +11332,35 @@
     </member>
     <member name="T:DevExpress.Pdf.PdfXYZDestination">
       <summary>
-        <para>Represents a destination that displays the PDF page with the <see cref="P:DevExpress.Pdf.PdfXYZDestination.Left"/>, <see cref="P:DevExpress.Pdf.PdfXYZDestination.Top"/> coordinates positioned at the upper-left corner of the window and the contents of the page magnified by the factor zoom (the <see cref="P:DevExpress.Pdf.PdfXYZDestination.Zoom"/> property).</para>
+        <para>A destination that positions a specific coordinate at the top left corner of the document window, and zooms a page with the specified zoom factor.</para>
       </summary>
     </member>
     <member name="M:DevExpress.Pdf.PdfXYZDestination.#ctor(DevExpress.Pdf.PdfPage,System.Nullable{System.Double},System.Nullable{System.Double},System.Nullable{System.Double})">
       <summary>
-        <para>Initializes a new instance of the <see cref="T:DevExpress.Pdf.PdfXYZDestination"/> class with the specified page, top and left coordinates that will be shown on the upper-left corner of the window, and zoom level to show the page.</para>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.Pdf.PdfXYZDestination"/> class with the specified parameters.</para>
       </summary>
-      <param name="page">A <see cref="T:DevExpress.Pdf.PdfPage"/> object that is the PDF page with contents.</param>
-      <param name="left">A nullable double value that is the left page coordinate.</param>
-      <param name="top">A nullable double value that is the top page coordinate.</param>
-      <param name="zoom">A nullable double value that is the zoom factor by which the page is magnified.</param>
+      <param name="page">The page to which the destination should refer.</param>
+      <param name="left">The X coordinate of a point that is positioned at at the top left corner of the document window.</param>
+      <param name="top">The Y coordinate of a point that is positioned at at the top left corner of the document window.</param>
+      <param name="zoom">The zoom factor.</param>
     </member>
     <member name="P:DevExpress.Pdf.PdfXYZDestination.Left">
       <summary>
-        <para>Gets the left horizontal coordinate positioned at the left edge of the window.</para>
+        <para>Gets the X coordinate of a point that is positioned at at the top left corner of the document window.</para>
       </summary>
-      <value>A nullable double value that it the left horizontal coordinate.</value>
+      <value>The X coordinate in the user coordinate system.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfXYZDestination.Top">
       <summary>
-        <para>Gets the top vertical page coordinate positioned at the top edge of the window.</para>
+        <para>Gets the Y coordinate of a point that is positioned at at the top left corner of the document window.</para>
       </summary>
-      <value>A nullable double value that is the vertical page coordinate.</value>
+      <value>The Y coordinate in the user coordinate system.</value>
     </member>
     <member name="P:DevExpress.Pdf.PdfXYZDestination.Zoom">
       <summary>
-        <para>Gets the contents of the page magnified by the zoom factor.</para>
+        <para>Gets the zoom factor applied to the visible page area.</para>
       </summary>
-      <value>A nullable double value that is the zoom factor.</value>
+      <value>The zoom factor.</value>
     </member>
     <member name="T:DevExpress.Pdf.PdfZugferdConformanceLevel">
       <summary>

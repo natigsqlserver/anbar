@@ -2454,7 +2454,7 @@
     </member>
     <member name="P:DevExpress.XtraBars.BarEditItem.UseEditorPadding">
       <summary>
-        <para>Gets or sets whether or not to enable the bar item’s padding. This property is only in effect within a <see cref="T:DevExpress.XtraBars.Ribbon.RibbonControl"/>.</para>
+        <para>Gets or sets whether to enable the bar item’s padding. This property is only in effect within a <see cref="T:DevExpress.XtraBars.Ribbon.RibbonControl"/>.</para>
       </summary>
       <value>true, to enable the bar item’s padding; otherwise, false.</value>
     </member>
@@ -19278,6 +19278,12 @@
         <para>Return value: Visible</para>
       </summary>
     </member>
+    <member name="F:DevExpress.XtraBars.Localization.BarString.WorkspaceMenuItemReplaceCaption">
+      <summary />
+    </member>
+    <member name="F:DevExpress.XtraBars.Localization.BarString.WorkspaceMenuItemReplaceMessage">
+      <summary />
+    </member>
     <member name="T:DevExpress.XtraBars.MenuAppearance">
       <summary>
         <para>Contains style settings used to customize items within popup menus and container items.</para>
@@ -30382,6 +30388,14 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
       </summary>
       <value>An Appearance object that stores the current <see cref="T:DevExpress.XtraBars.Ribbon.RibbonPage"/>‘s appearance settings.</value>
     </member>
+    <member name="P:DevExpress.XtraBars.Ribbon.RibbonPage.AppearanceHovered">
+      <summary />
+      <value></value>
+    </member>
+    <member name="P:DevExpress.XtraBars.Ribbon.RibbonPage.AppearanceSelected">
+      <summary />
+      <value></value>
+    </member>
     <member name="P:DevExpress.XtraBars.Ribbon.RibbonPage.Category">
       <summary>
         <para>Gets or sets the page category with which the current <see cref="T:DevExpress.XtraBars.Ribbon.RibbonPage"/> object is associated.</para>
@@ -32028,6 +32042,10 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
       </summary>
       <param name="owner">An object that implements the DevExpress.Utils.IAppearanceOwner interface and will own the created collection.</param>
     </member>
+    <member name="P:DevExpress.XtraBars.RibbonAppearances.ApplicationButton">
+      <summary />
+      <value></value>
+    </member>
     <member name="M:DevExpress.XtraBars.RibbonAppearances.BeginUpdate">
       <summary>
         <para>Locks the <see cref="T:DevExpress.XtraBars.RibbonAppearances"></see> object by preventing visual updates of the object and its elements until the EndUpdate method is called.</para>
@@ -32138,6 +32156,14 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
         <para>Gets the appearance settings used to paint page headers.</para>
       </summary>
       <value>A <see cref="T:DevExpress.Utils.AppearanceObject"/> object that provides the appearance settings used to paint page headers.</value>
+    </member>
+    <member name="P:DevExpress.XtraBars.RibbonAppearances.PageHeaderHovered">
+      <summary />
+      <value></value>
+    </member>
+    <member name="P:DevExpress.XtraBars.RibbonAppearances.PageHeaderSelected">
+      <summary />
+      <value></value>
     </member>
     <member name="T:DevExpress.XtraBars.RibbonGalleryAppearances">
       <summary>

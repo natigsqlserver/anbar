@@ -11631,16 +11631,6 @@
         <para>Default value: “You are about to load a third-party library: ‘{0}’.\r\n\r\nBefore you proceed, please consider resulting security risks and make sure that this library is supplied from a trusted source.”</para>
       </summary>
     </member>
-    <member name="F:DevExpress.DataAccess.UI.Localization.DataAccessUIStringId.DataConnectionParametersDialog">
-      <summary>
-        <para>Default value: “Connection error”</para>
-      </summary>
-    </member>
-    <member name="F:DevExpress.DataAccess.UI.Localization.DataAccessUIStringId.DataConnectionParametersDialog_Header_UnableConnect">
-      <summary>
-        <para>Default value: “Unable to connect to the database. See details below.”</para>
-      </summary>
-    </member>
     <member name="F:DevExpress.DataAccess.UI.Localization.DataAccessUIStringId.DataPreviewForm_Title">
       <summary>
         <para>Default value: “Data Preview”</para>
@@ -12066,6 +12056,9 @@
       </summary>
     </member>
     <member name="F:DevExpress.DataAccess.UI.Localization.DataAccessUIStringId.MessageBoxCloseDataSourceWizardConfirmation">
+      <summary />
+    </member>
+    <member name="F:DevExpress.DataAccess.UI.Localization.DataAccessUIStringId.MessageBoxCloseManageQueriesDialogConfirmation">
       <summary />
     </member>
     <member name="F:DevExpress.DataAccess.UI.Localization.DataAccessUIStringId.MessageBoxConfirmationTitle">
@@ -14440,6 +14433,10 @@
       </summary>
       <value>An array of <see cref="T:DevExpress.DataAccess.Excel.FieldInfo"/> objects.</value>
     </member>
+    <member name="P:DevExpress.DataAccess.Wizard.Model.DataSourceModel.SchemaDiscoveryMaxItemCount">
+      <summary />
+      <value></value>
+    </member>
     <member name="P:DevExpress.DataAccess.Wizard.Model.DataSourceModel.ShouldSavePassword">
       <summary>
         <para>Specifies whether or not to save the password for an Excel document.</para>
@@ -14957,6 +14954,10 @@
       <summary />
       <value></value>
     </member>
+    <member name="P:DevExpress.DataAccess.Wizard.Model.IJsonDataSourceModel.SchemaDiscoveryMaxItemCount">
+      <summary />
+      <value></value>
+    </member>
     <member name="T:DevExpress.DataAccess.Wizard.Model.IMongoDBDataConnectionModel">
       <summary />
     </member>
@@ -15129,6 +15130,10 @@
       <value></value>
     </member>
     <member name="P:DevExpress.DataAccess.Wizard.Model.JsonDataSourceModel.RootElement">
+      <summary />
+      <value></value>
+    </member>
+    <member name="P:DevExpress.DataAccess.Wizard.Model.JsonDataSourceModel.SchemaDiscoveryMaxItemCount">
       <summary />
       <value></value>
     </member>

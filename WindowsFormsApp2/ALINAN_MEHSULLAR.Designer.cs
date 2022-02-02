@@ -132,7 +132,7 @@ namespace WindowsFormsApp2
             this.Controls.Add(this.gridControl1);
             this.Name = "ALINAN_MEHSULLAR";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "ALINAN_MEHSULLAR";
+            this.Text = "ALINAN MƏHSULLAR";
             this.Load += new System.EventHandler(this.ALINAN_MEHSULLAR_Load);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).EndInit();

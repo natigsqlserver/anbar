@@ -15,7 +15,9 @@ namespace WindowsFormsApp2
         string updateUser = "userParol_update";
         string deleteUser = "userParol_delete";
 
-        public void INSERT_user(string login, string parol, int admin)
+        public void INSERT_user(string login, string parol, int admin,string  AD_ ,string EMAILL_ ,string TELEFON_ ,
+string  SV_NO_ ,string  UNVAN_ ,DateTime DOGUM_TARIXI_ ,string GAN_GRUPU_ 
+)
         {
             SqlConnection con = new SqlConnection(Properties.Settings.Default.SqlCon);
             SqlCommand cmd = new SqlCommand(insertUser, con);
@@ -28,13 +30,27 @@ namespace WindowsFormsApp2
             param.Value = parol;
             param = cmd.Parameters.Add("@admin", SqlDbType.Int);
             param.Value = admin;
-
+            param = cmd.Parameters.Add("@AD", SqlDbType.NVarChar,100);
+            param.Value = AD_;
+            param = cmd.Parameters.Add("@EMAILL", SqlDbType.NVarChar, 100);
+            param.Value = EMAILL_;
+            param = cmd.Parameters.Add("@TELEFON", SqlDbType.NVarChar, 100);
+            param.Value = TELEFON_;
+            param = cmd.Parameters.Add("@SV_NO", SqlDbType.NVarChar, 100);
+            param.Value = SV_NO_;
+            param = cmd.Parameters.Add("@UNVAN", SqlDbType.NVarChar, 100);
+            param.Value = UNVAN_;
+            param = cmd.Parameters.Add("@DOGUM_TARIXI", SqlDbType.Date);
+            param.Value = DOGUM_TARIXI_;
+            param = cmd.Parameters.Add("@GAN_GRUPU", SqlDbType.NVarChar,100);
+            param.Value = GAN_GRUPU_;
             con.Open();
             cmd.ExecuteNonQuery();
             con.Close();
         }
 
-        public void UPDATE_user(int id,string login, string parol, int admin)
+        public void UPDATE_user(int id,string login, string parol, int admin, string AD_, string EMAILL_, string TELEFON_,
+string SV_NO_, string UNVAN_, DateTime DOGUM_TARIXI_, string GAN_GRUPU_)
         {
             SqlConnection con = new SqlConnection(Properties.Settings.Default.SqlCon);
             SqlCommand cmd = new SqlCommand(updateUser, con);
@@ -49,6 +65,21 @@ namespace WindowsFormsApp2
             param.Value = parol;
             param = cmd.Parameters.Add("@admin", SqlDbType.Int);
             param.Value = admin;
+            param = cmd.Parameters.Add("@AD", SqlDbType.NVarChar, 100);
+            param.Value = AD_;
+            param = cmd.Parameters.Add("@EMAILL", SqlDbType.NVarChar, 100);
+            param.Value = EMAILL_;
+            param = cmd.Parameters.Add("@TELEFON", SqlDbType.NVarChar, 100);
+            param.Value = TELEFON_;
+            param = cmd.Parameters.Add("@SV_NO", SqlDbType.NVarChar, 100);
+            param.Value = SV_NO_;
+            param = cmd.Parameters.Add("@UNVAN", SqlDbType.NVarChar, 100);
+            param.Value = UNVAN_;
+            param = cmd.Parameters.Add("@DOGUM_TARIXI", SqlDbType.Date);
+            param.Value = DOGUM_TARIXI_;
+            param = cmd.Parameters.Add("@GAN_GRUPU", SqlDbType.NVarChar, 100);
+            param.Value = GAN_GRUPU_;
+
 
             con.Open();
             cmd.ExecuteNonQuery();

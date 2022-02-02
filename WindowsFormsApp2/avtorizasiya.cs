@@ -76,7 +76,7 @@ namespace WindowsFormsApp2
                         this.Hide();
                         admin_control.check = true;
                         //anaEkranOLD f2 = new anaEkranOLD();
-                        RibbonForm1 f2 = new RibbonForm1();
+                        RibbonForm1 f2 = new RibbonForm1(1,Convert.ToInt32( dr[3].ToString()));
                         f2.Show();
 
                         check = true;
@@ -88,7 +88,7 @@ namespace WindowsFormsApp2
                         this.Hide();
                         admin_control.check = false;
                         //anaEkranOLD f2 = new anaEkranOLD();
-                        RibbonForm1 f2 = new RibbonForm1();
+                        RibbonForm1 f2 = new RibbonForm1(0, Convert.ToInt32(dr[3].ToString()));
                         f2.Show();
 
                         check = true;

@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SqlCon" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SqlCon (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp2.Properties.Settings.GlobalReference.Default.SqlCon" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SqlCon" IsAppSettingsProperty="true" Modifier="Assembly" Name="SqlCon (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.WindowsFormsApp2.Properties.Settings.GlobalReference.Default.SqlCon" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="gaytarilacag_mallarTableAdapter" GeneratorDataComponentClassName="gaytarilacag_mallarTableAdapter" Name="gaytarilacag_mallar" UserDataComponentName="gaytarilacag_mallarTableAdapter">
@@ -39,7 +39,7 @@
   <xs:element name="NewIntekoDataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="NewIntekoDataSet3" msprop:Generator_UserDSName="NewIntekoDataSet3">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="gaytarilacag_mallar" msprop:Generator_TableClassName="gaytarilacag_mallarDataTable" msprop:Generator_TableVarName="tablegaytarilacag_mallar" msprop:Generator_TablePropName="gaytarilacag_mallar" msprop:Generator_RowDeletingName="gaytarilacag_mallarRowDeleting" msprop:Generator_RowChangingName="gaytarilacag_mallarRowChanging" msprop:Generator_RowEvHandlerName="gaytarilacag_mallarRowChangeEventHandler" msprop:Generator_RowDeletedName="gaytarilacag_mallarRowDeleted" msprop:Generator_UserTableName="gaytarilacag_mallar" msprop:Generator_RowChangedName="gaytarilacag_mallarRowChanged" msprop:Generator_RowEvArgName="gaytarilacag_mallarRowChangeEvent" msprop:Generator_RowClassName="gaytarilacag_mallarRow">
+        <xs:element name="gaytarilacag_mallar" msprop:Generator_TableClassName="gaytarilacag_mallarDataTable" msprop:Generator_TableVarName="tablegaytarilacag_mallar" msprop:Generator_RowChangedName="gaytarilacag_mallarRowChanged" msprop:Generator_TablePropName="gaytarilacag_mallar" msprop:Generator_RowDeletingName="gaytarilacag_mallarRowDeleting" msprop:Generator_RowChangingName="gaytarilacag_mallarRowChanging" msprop:Generator_RowEvHandlerName="gaytarilacag_mallarRowChangeEventHandler" msprop:Generator_RowDeletedName="gaytarilacag_mallarRowDeleted" msprop:Generator_RowClassName="gaytarilacag_mallarRow" msprop:Generator_UserTableName="gaytarilacag_mallar" msprop:Generator_RowEvArgName="gaytarilacag_mallarRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="chekc" msprop:Generator_ColumnVarNameInTable="columnchekc" msprop:Generator_ColumnPropNameInRow="chekc" msprop:Generator_ColumnPropNameInTable="chekcColumn" msprop:Generator_UserColumnName="chekc" type="xs:boolean" minOccurs="0" />

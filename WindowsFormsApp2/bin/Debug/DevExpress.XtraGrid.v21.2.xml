@@ -5271,6 +5271,11 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
         <para>Enables you to custom paint band headers.</para>
       </summary>
     </member>
+    <member name="E:DevExpress.XtraGrid.Views.BandedGrid.BandedGridView.HyperlinkClick">
+      <summary>
+        <para>Fires when a hyperlink in a column or band header is activated.</para>
+      </summary>
+    </member>
     <member name="M:DevExpress.XtraGrid.Views.BandedGrid.BandedGridView.InvalidateBandHeader(DevExpress.XtraGrid.Views.BandedGrid.GridBand)">
       <summary>
         <para>Invalidates a band header or the entire band panel.</para>
@@ -11048,9 +11053,9 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Card.CardView.CardCaptionFormat">
       <summary>
-        <para>Gets or sets the card caption text pattern.</para>
+        <para>Gets or sets the format string for text in card captions.</para>
       </summary>
-      <value>A string value specifying the card caption text pattern.</value>
+      <value>A string that specifies the card caption text pattern.</value>
     </member>
     <member name="E:DevExpress.XtraGrid.Views.Card.CardView.CardCollapsed">
       <summary>
@@ -12777,25 +12782,25 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Grid.FilterPopupExcelEventArgs.ShowAggregates">
       <summary>
-        <para>Gets or sets whether or not to show filters for aggregates (Below Average, Above Average, etc.).</para>
+        <para>Gets or sets whether to show filters for aggregates (Below Average, Above Average, etc.).</para>
       </summary>
       <value>true, to show filters for aggregates; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Grid.FilterPopupExcelEventArgs.ShowBlanks">
       <summary>
-        <para>Gets or sets whether or not to show the IsBlank and IsNotBlank filter conditions.</para>
+        <para>Gets or sets whether to show the IsBlank and IsNotBlank filter conditions.</para>
       </summary>
       <value>true, to show the IsBlank and IsNotBlank filter conditions; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Grid.FilterPopupExcelEventArgs.ShowComparisons">
       <summary>
-        <para>Gets or sets whether or not to show comparison filter conditions (Greater Than, Less Than, etc.).</para>
+        <para>Gets or sets whether to show comparison filter conditions (Greater Than, Less Than, etc.).</para>
       </summary>
       <value>true, to show comparison filter conditions; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Grid.FilterPopupExcelEventArgs.ShowCustomFilters">
       <summary>
-        <para>Gets or sets whether or not to show the Custom Filters.</para>
+        <para>Gets or sets whether to show the Custom Filters.</para>
       </summary>
       <value>true, to show the Custom Filters; otherwise, false.</value>
     </member>
@@ -12805,7 +12810,7 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Grid.FilterPopupExcelEventArgs.ShowFiltersTab">
       <summary>
-        <para>Gets or sets whether or not to show the Filters tab.</para>
+        <para>Gets or sets whether to show the Filters tab.</para>
       </summary>
       <value>true, to show the Filters tab; otherwise, false.</value>
     </member>
@@ -12817,7 +12822,7 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Grid.FilterPopupExcelEventArgs.ShowNulls">
       <summary>
-        <para>Gets or sets whether or not to show the Is Null and Is Not Null filter conditions.</para>
+        <para>Gets or sets whether to show the Is Null and Is Not Null filter conditions.</para>
       </summary>
       <value>true, to show the Is Null and Is Not Null filter conditions; otherwise, false.</value>
     </member>
@@ -12829,7 +12834,7 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Grid.FilterPopupExcelEventArgs.ShowSequences">
       <summary>
-        <para>Gets or sets whether or not to show filters for sequences (Top N, Bottom N, etc.).</para>
+        <para>Gets or sets whether to show filters for sequences (Top N, Bottom N, etc.).</para>
       </summary>
       <value>true, to show filters for sequences; otherwise, false.</value>
     </member>
@@ -12977,11 +12982,13 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
     </member>
     <member name="F:DevExpress.XtraGrid.Views.Grid.GridInHeaderSearchMode.TextFilter">
       <summary>
-        <para>Built-in column header search boxes are enabled.</para>
+        <para>Built-in column header search boxes are enabled, and are used to filter against columns.</para>
       </summary>
     </member>
     <member name="F:DevExpress.XtraGrid.Views.Grid.GridInHeaderSearchMode.TextSearch">
-      <summary />
+      <summary>
+        <para>Built-in column header search boxes are enabled, and are used to search in columns.</para>
+      </summary>
     </member>
     <member name="T:DevExpress.XtraGrid.Views.Grid.GridMenuEventArgs">
       <summary>
@@ -13235,7 +13242,7 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Grid.GridOptionsBehavior.AllowPartialGroups">
       <summary>
-        <para>Gets or sets whether or not to hide group rows if they contain only a single data row.</para>
+        <para>Gets or sets whether to hide group rows if they contain only a single data row.</para>
       </summary>
       <value>A value that specifies whether or not to hide group rows if they contain only a single data row. The DefaultBoolean.Default property is equivalent to False.</value>
     </member>
@@ -13292,6 +13299,12 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
         <para>Gets or sets the mode in which a data record can be edited - inplace or via a dedicated inline or popup Edit Form.</para>
       </summary>
       <value>The mode in which a data record can be edited.</value>
+    </member>
+    <member name="P:DevExpress.XtraGrid.Views.Grid.GridOptionsBehavior.HyperlinkClickMode">
+      <summary>
+        <para>Gets or sets whether and how hyperlinks in column and band headers are activated.</para>
+      </summary>
+      <value>A value that specifies whether and how hyperlinks in column and band headers are activated.</value>
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Grid.GridOptionsBehavior.KeepGroupExpandedOnSorting">
       <summary>
@@ -13418,7 +13431,7 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Grid.GridOptionsCustomization.UseAdvancedCustomizationForm">
       <summary>
-        <para>Returns or sets whether or not to use the advanced Customization Form.</para>
+        <para>Gets or sets whether to use the advanced Customization Form.</para>
       </summary>
       <value><see cref="F:DevExpress.Utils.DefaultBoolean.True"/> to use the advanced customization form; <see cref="F:DevExpress.Utils.DefaultBoolean.False"/> to use the default customization form; <see cref="F:DevExpress.Utils.DefaultBoolean.Default"/> to use the global <see cref="P:DevExpress.XtraGrid.Views.Grid.GridOptionsCustomization.UseAdvancedCustomizationForm"/> setting.</value>
     </member>
@@ -13617,7 +13630,7 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Grid.GridOptionsFilter.InHeaderSearchMode">
       <summary>
-        <para>Gets or sets whether users can search for column data within built-in column header search boxes.</para>
+        <para>Gets or sets whether built-in column header search boxes are enabled. They allow users to search for column data or filter against columns.</para>
       </summary>
       <value>A value that specifies whether built-in column header search boxes are enabled.</value>
     </member>
@@ -15465,6 +15478,11 @@ The method’s argument will contain the requested value. The completed paramete
       </summary>
       <value>A <see cref="T:DevExpress.XtraGrid.Views.Base.ScrollVisibility"/> enumeration value specifying when the horizontal scrollbar should be displayed.</value>
     </member>
+    <member name="E:DevExpress.XtraGrid.Views.Grid.GridView.HyperlinkClick">
+      <summary>
+        <para>Fires when a hyperlink in a column header is activated.</para>
+      </summary>
+    </member>
     <member name="P:DevExpress.XtraGrid.Views.Grid.GridView.IndicatorWidth">
       <summary>
         <para>Gets or sets the width of the row indicator panel.</para>
@@ -16404,7 +16422,7 @@ If set to -1, the method acts like the GridView.SetMasterRowExpanded method.</pa
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Grid.GridView.UseAdvancedCustomizationForm">
       <summary>
-        <para>Returns or sets whether or not to use the advanced Customization Form in grid views. This property is in effect if a view’s <see cref="P:DevExpress.XtraGrid.Views.Grid.GridOptionsCustomization.UseAdvancedCustomizationForm"/> property is set to <see cref="F:DevExpress.Utils.DefaultBoolean.Default"/>.</para>
+        <para>Gets or sets whether to use the advanced Customization Form in grid views. This property is in effect if a view’s <see cref="P:DevExpress.XtraGrid.Views.Grid.GridOptionsCustomization.UseAdvancedCustomizationForm"/> property is set to <see cref="F:DevExpress.Utils.DefaultBoolean.Default"/>.</para>
       </summary>
       <value><see cref="F:DevExpress.Utils.DefaultBoolean.True"/> to use the advanced customization form in grid views; otherwise, <see cref="F:DevExpress.Utils.DefaultBoolean.Default"/> or <see cref="F:DevExpress.Utils.DefaultBoolean.False"/>.</value>
     </member>
@@ -17633,7 +17651,9 @@ The <see cref="F:DevExpress.XtraGrid.GridControl.InvalidRowHandle"/> value if th
       <summary />
     </member>
     <member name="T:DevExpress.XtraGrid.Views.Items.ItemsView">
-      <summary />
+      <summary>
+        <para>Renders items (records) using HTML-CSS templates. (CTP)</para>
+      </summary>
     </member>
     <member name="M:DevExpress.XtraGrid.Views.Items.ItemsView.#ctor">
       <summary>
@@ -17669,7 +17689,9 @@ The <see cref="F:DevExpress.XtraGrid.GridControl.InvalidRowHandle"/> value if th
       <returns></returns>
     </member>
     <member name="E:DevExpress.XtraGrid.Views.Items.ItemsView.CustomizeItem">
-      <summary />
+      <summary>
+        <para>Allows you to customize individual items.</para>
+      </summary>
     </member>
     <member name="E:DevExpress.XtraGrid.Views.Items.ItemsView.ElementMouseClick">
       <summary />
@@ -17685,12 +17707,16 @@ The <see cref="F:DevExpress.XtraGrid.GridControl.InvalidRowHandle"/> value if th
       <value></value>
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Items.ItemsView.HtmlTemplate">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Specifies the default HTML-CSS template used to generate items.</para>
+      </summary>
+      <value>An HTML-CSS template used to generate items.</value>
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Items.ItemsView.HtmlTemplates">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Provides access to the collection of HTML-CSS templates.</para>
+      </summary>
+      <value>A collection of HTML-CSS tile templates.</value>
     </member>
     <member name="M:DevExpress.XtraGrid.Views.Items.ItemsView.Invalidate(System.Drawing.Rectangle)">
       <summary />
@@ -17710,12 +17736,21 @@ The <see cref="F:DevExpress.XtraGrid.GridControl.InvalidRowHandle"/> value if th
     <member name="M:DevExpress.XtraGrid.Views.Items.ItemsView.MoveNextPage">
       <summary />
     </member>
-    <member name="E:DevExpress.XtraGrid.Views.Items.ItemsView.QueryItemTemplate">
-      <summary />
-    </member>
-    <member name="P:DevExpress.XtraGrid.Views.Items.ItemsView.ScrollMode">
+    <member name="P:DevExpress.XtraGrid.Views.Items.ItemsView.OptionsBehavior">
       <summary />
       <value></value>
+    </member>
+    <member name="E:DevExpress.XtraGrid.Views.Items.ItemsView.QueryItemTemplate">
+      <summary>
+        <para>Allows you to assign and customize templates for individual items.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraGrid.Views.Items.ItemsView.RefreshData">
+      <summary />
+    </member>
+    <member name="M:DevExpress.XtraGrid.Views.Items.ItemsView.RefreshData(System.Collections.Generic.IReadOnlyCollection{System.Int32})">
+      <summary />
+      <param name="dataSourceRowIndices"></param>
     </member>
     <member name="M:DevExpress.XtraGrid.Views.Items.ItemsView.ScrollToEnd">
       <summary />
@@ -18041,9 +18076,9 @@ The <see cref="F:DevExpress.XtraGrid.GridControl.InvalidRowHandle"/> value if th
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Layout.LayoutView.CardCaptionFormat">
       <summary>
-        <para>Gets or sets card caption text patterns.</para>
+        <para>Gets or sets the format string for text in card captions.</para>
       </summary>
-      <value>A string value specifying the card caption’s text pattern.</value>
+      <value>A string that specifies the card caption text pattern.</value>
     </member>
     <member name="E:DevExpress.XtraGrid.Views.Layout.LayoutView.CardClick">
       <summary>
@@ -20830,7 +20865,7 @@ This value is used to initialize the <see cref="P:DevExpress.XtraGrid.Views.Prin
       <summary>
         <para>Gets the TileView to which the current collection belongs.</para>
       </summary>
-      <value>The TileView that owns the colection.</value>
+      <value>The TileView that owns the collection.</value>
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Tile.KanbanGroupCollection.VisibleGroups">
       <summary>
@@ -21044,7 +21079,7 @@ This value is used to initialize the <see cref="P:DevExpress.XtraGrid.Views.Prin
     </member>
     <member name="E:DevExpress.XtraGrid.Views.Tile.TileView.CustomItemTemplate">
       <summary>
-        <para>Allows you to assign custom item templates to tiles.</para>
+        <para>Allows you to assign and customize templates for individual tiles.</para>
       </summary>
     </member>
     <member name="E:DevExpress.XtraGrid.Views.Tile.TileView.CustomRowCellEditForEditing">
@@ -21135,13 +21170,6 @@ This value is used to initialize the <see cref="P:DevExpress.XtraGrid.Views.Prin
       </summary>
       <param name="rowHandle">An integer value that specifies a handle of the tile for which to return the group handle.</param>
       <returns>An integer value that specifies the unique identifier of the group to which the tile with the specified rowHandle belongs.</returns>
-    </member>
-    <member name="M:DevExpress.XtraGrid.Views.Tile.TileView.GetRowExpanded(System.Int32)">
-      <summary>
-        <para>Returns whether the tile group with the specified handle is expanded.</para>
-      </summary>
-      <param name="rowHandle">An integer value specifying the handle of the tile group to retrieve whether it is expanded.</param>
-      <returns>true if the tile group with the specified handle is expanded; otherwise, false.</returns>
     </member>
     <member name="E:DevExpress.XtraGrid.Views.Tile.TileView.GetThumbnailImage">
       <summary>
@@ -21432,13 +21460,6 @@ This value is used to initialize the <see cref="P:DevExpress.XtraGrid.Views.Prin
       </summary>
       <param name="item"></param>
     </member>
-    <member name="M:DevExpress.XtraGrid.Views.Tile.TileView.SetRowExpanded(System.Int32,System.Boolean)">
-      <summary>
-        <para>Expands or collapses the tile group with the specified handle.</para>
-      </summary>
-      <param name="rowHandle">An integer value specifying the handle of the tile group to expand/collapse.</param>
-      <param name="expanded">true to expand the tile group; false to collapse it.</param>
-    </member>
     <member name="M:DevExpress.XtraGrid.Views.Tile.TileView.SetTemplateEditing(System.Boolean)">
       <summary>
         <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.</para>
@@ -21469,9 +21490,9 @@ This value is used to initialize the <see cref="P:DevExpress.XtraGrid.Views.Prin
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Tile.TileView.Templates">
       <summary>
-        <para>Provides access to the collection of tile templates.</para>
+        <para>Provides access to the collection of regular tile templates.</para>
       </summary>
-      <value></value>
+      <value>A collection of regular templates.</value>
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Tile.TileView.TileColumns">
       <summary>
@@ -21480,12 +21501,16 @@ This value is used to initialize the <see cref="P:DevExpress.XtraGrid.Views.Prin
       <value>A DevExpress.XtraEditors.TableLayout.TableColumnDefinitionCollection object that specifies the collection of columns into which tile elements are arranged.</value>
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Tile.TileView.TileHtmlTemplate">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Specifies the default HTML-CSS template used to generate tiles. (CTP)</para>
+      </summary>
+      <value>An HTML-CSS template used to generate tiles.</value>
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Tile.TileView.TileHtmlTemplates">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Provides access to the collection of HTML-CSS tile templates. (CTP)</para>
+      </summary>
+      <value>A collection of HTML-CSS tile templates.</value>
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Tile.TileView.TileRows">
       <summary>
@@ -21501,15 +21526,9 @@ This value is used to initialize the <see cref="P:DevExpress.XtraGrid.Views.Prin
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Tile.TileView.TileTemplate">
       <summary>
-        <para>Specifies the default template from which tiles are generated.</para>
+        <para>Specifies the default regular template used to generate tiles.</para>
       </summary>
       <value>A <see cref="T:DevExpress.XtraEditors.TileItemElementCollection"/> object that is the template applied to all <see cref="T:DevExpress.XtraGrid.Views.Tile.TileViewItem"/>s in this <see cref="T:DevExpress.XtraGrid.Views.Tile.TileView"/>.</value>
-    </member>
-    <member name="M:DevExpress.XtraGrid.Views.Tile.TileView.ToggleGroupExpand(System.Int32)">
-      <summary>
-        <para>Collapses/expands the tile group with the specified handle.</para>
-      </summary>
-      <param name="groupRowHandle">An integer value specifying the handle of the tile group to collapse/expand.</param>
     </member>
     <member name="P:DevExpress.XtraGrid.Views.Tile.TileView.ViewCaptionHeight">
       <summary>
@@ -22420,7 +22439,7 @@ This value is used to initialize the <see cref="P:DevExpress.XtraGrid.Views.Prin
     </member>
     <member name="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView">
       <summary>
-        <para>Displays records using one of seven styles supported by MS Windows Explorer - Small, Medium, Large, Extra Large, List, Tiles and Content.</para>
+        <para>Displays records using one of seven styles supported by Microsoft Windows Explorer — Small, Medium, Large, Extra Large, List, Tiles, and Content. Supports HTML-CSS templates that allow you to override the default data presentation in these styles.</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView.#ctor">
@@ -22574,7 +22593,7 @@ This value is used to initialize the <see cref="P:DevExpress.XtraGrid.Views.Prin
         <para>Allows you to manually repaint a <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/> item.</para>
       </summary>
     </member>
-    <member name="E:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView.CustomizeItemTemplate">
+    <member name="E:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView.CustomizeItem">
       <summary />
     </member>
     <member name="M:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView.DeleteSelectedRows">
@@ -22665,6 +22684,24 @@ This value is used to initialize the <see cref="P:DevExpress.XtraGrid.Views.Prin
       <summary>
         <para>Hides an opened editor assigned to the <see cref="T:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView"/>‘s Text column.</para>
       </summary>
+    </member>
+    <member name="E:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView.HtmlElementMouseClick">
+      <summary />
+    </member>
+    <member name="E:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView.HtmlElementMouseDown">
+      <summary />
+    </member>
+    <member name="E:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView.HtmlElementMouseMove">
+      <summary />
+    </member>
+    <member name="E:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView.HtmlElementMouseOut">
+      <summary />
+    </member>
+    <member name="E:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView.HtmlElementMouseOver">
+      <summary />
+    </member>
+    <member name="E:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView.HtmlElementMouseUp">
+      <summary />
     </member>
     <member name="P:DevExpress.XtraGrid.Views.WinExplorer.WinExplorerView.HtmlTemplates">
       <summary />

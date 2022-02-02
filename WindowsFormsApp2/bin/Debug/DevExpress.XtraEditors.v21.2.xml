@@ -1687,6 +1687,9 @@
         <para>Resets the <see cref="P:DevExpress.XtraEditors.BaseEdit.ForeColor"/> property back to its default value.</para>
       </summary>
     </member>
+    <member name="M:DevExpress.XtraEditors.BaseEdit.ResetSelection">
+      <summary />
+    </member>
     <member name="M:DevExpress.XtraEditors.BaseEdit.SelectAll">
       <summary>
         <para>Selects the editor’s entire content.</para>
@@ -10300,6 +10303,42 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.False.</value>
         <para></para>
       </summary>
     </member>
+    <member name="N:DevExpress.XtraEditors.Controls.StepProgressBar">
+      <summary />
+    </member>
+    <member name="T:DevExpress.XtraEditors.Controls.StepProgressBar.ProgressMode">
+      <summary />
+    </member>
+    <member name="F:DevExpress.XtraEditors.Controls.StepProgressBar.ProgressMode.Default">
+      <summary />
+    </member>
+    <member name="F:DevExpress.XtraEditors.Controls.StepProgressBar.ProgressMode.Range">
+      <summary />
+    </member>
+    <member name="F:DevExpress.XtraEditors.Controls.StepProgressBar.ProgressMode.SingleStep">
+      <summary />
+    </member>
+    <member name="T:DevExpress.XtraEditors.Controls.StepProgressBar.ScrollMode">
+      <summary />
+    </member>
+    <member name="F:DevExpress.XtraEditors.Controls.StepProgressBar.ScrollMode.Auto">
+      <summary />
+    </member>
+    <member name="F:DevExpress.XtraEditors.Controls.StepProgressBar.ScrollMode.Default">
+      <summary />
+    </member>
+    <member name="F:DevExpress.XtraEditors.Controls.StepProgressBar.ScrollMode.Fluent">
+      <summary />
+    </member>
+    <member name="F:DevExpress.XtraEditors.Controls.StepProgressBar.ScrollMode.Hidden">
+      <summary />
+    </member>
+    <member name="F:DevExpress.XtraEditors.Controls.StepProgressBar.ScrollMode.Touch">
+      <summary />
+    </member>
+    <member name="F:DevExpress.XtraEditors.Controls.StepProgressBar.ScrollMode.Visible">
+      <summary />
+    </member>
     <member name="T:DevExpress.XtraEditors.Controls.StringId">
       <summary>
         <para>Contains values corresponding to strings that can be localized.</para>
@@ -15379,6 +15418,12 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.False.</value>
         <para>This member supports the internal infrastructure, and is not intended to be used directly from your code.</para>
       </summary>
     </member>
+    <member name="E:DevExpress.XtraEditors.FilterControl.CustomValueEditor">
+      <summary />
+    </member>
+    <member name="E:DevExpress.XtraEditors.FilterControl.CustomValueEditorForEditing">
+      <summary />
+    </member>
     <member name="E:DevExpress.XtraEditors.FilterControl.DisposeValueEditor">
       <summary>
         <para>Fires before an editor used to edit operands is disposed of.</para>
@@ -15555,6 +15600,9 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.False.</value>
         <para>Gets or sets whether the IsNull operator is available for string values.</para>
       </summary>
       <value>true if the IsNull operator is available for string values; otherwise, false.</value>
+    </member>
+    <member name="E:DevExpress.XtraEditors.FilterControl.ShownValueEditor">
+      <summary />
     </member>
     <member name="P:DevExpress.XtraEditors.FilterControl.ShowOperandCustomFunctions">
       <summary>
@@ -17396,13 +17444,17 @@ The FormatConditionAutomaticType.Default value is equivalent to FormatConditionA
     </member>
     <member name="T:DevExpress.XtraEditors.HtmlContentControl">
       <summary>
-        <para>Renders a UI from an HTML+CSS markup. Can show data from a bound data context (a business object or data source item).</para>
+        <para>Renders a UI from HTML-CSS markup. Can show data from a bound data context (a business object or data source item). (CTP)</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraEditors.HtmlContentControl.#ctor">
       <summary>
         <para>Initializes a new instance of the <see cref="T:DevExpress.XtraEditors.HtmlContentControl"/> class.</para>
       </summary>
+    </member>
+    <member name="P:DevExpress.XtraEditors.HtmlContentControl.AllowFocus">
+      <summary />
+      <value></value>
     </member>
     <member name="P:DevExpress.XtraEditors.HtmlContentControl.Appearance">
       <summary />
@@ -17529,7 +17581,7 @@ The FormatConditionAutomaticType.Default value is equivalent to FormatConditionA
     </member>
     <member name="T:DevExpress.XtraEditors.HtmlContentPopup">
       <summary>
-        <para>Allows you to show a popup window with a UI rendered from an HTML+CSS template. Can show data from a bound data context (a business object or data source item).</para>
+        <para>Allows you to show a popup window with a UI rendered from an HTML-CSS template. Can show data from a bound data context (a business object or data source item). (CTP)</para>
       </summary>
     </member>
     <member name="M:DevExpress.XtraEditors.HtmlContentPopup.#ctor">
@@ -25897,9 +25949,9 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
     </member>
     <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit.SortColumnIndex">
       <summary>
-        <para>Gets or sets the visible column index against which data is sorted.</para>
+        <para>Gets or sets the column index against which data is sorted.</para>
       </summary>
-      <value>The zero-based visible column index against which data is sorted.</value>
+      <value>The zero-based column index against which data is sorted.</value>
     </member>
     <member name="P:DevExpress.XtraEditors.Repository.RepositoryItemLookUpEdit.TextEditStyle">
       <summary />
@@ -30326,6 +30378,35 @@ The default value is <see cref="F:DevExpress.Utils.DefaultBoolean.Default"/>.</v
       <summary />
       <returns></returns>
     </member>
+    <member name="T:DevExpress.XtraEditors.StepProgressBarItemHyperlinkClickEventArgs">
+      <summary>
+        <para>Provides data for the <see cref="E:DevExpress.XtraEditors.StepProgressBar.ItemHyperlinkClick"/> event.</para>
+      </summary>
+    </member>
+    <member name="M:DevExpress.XtraEditors.StepProgressBarItemHyperlinkClickEventArgs.#ctor(DevExpress.XtraEditors.ViewInfo.StepProgressBarHitInfo,DevExpress.Utils.Text.Internal.StringBlock,System.Windows.Forms.MouseEventArgs)">
+      <summary>
+        <para>Initializes a new instance of the <see cref="T:DevExpress.XtraEditors.StepProgressBarItemHyperlinkClickEventArgs"/> class with specified settings.</para>
+      </summary>
+      <param name="hitInfo"></param>
+      <param name="stringBlock"></param>
+      <param name="mouseArgs"></param>
+    </member>
+    <member name="P:DevExpress.XtraEditors.StepProgressBarItemHyperlinkClickEventArgs.IsCaption">
+      <summary />
+      <value></value>
+    </member>
+    <member name="P:DevExpress.XtraEditors.StepProgressBarItemHyperlinkClickEventArgs.IsDescription">
+      <summary />
+      <value></value>
+    </member>
+    <member name="P:DevExpress.XtraEditors.StepProgressBarItemHyperlinkClickEventArgs.Item">
+      <summary />
+      <value></value>
+    </member>
+    <member name="P:DevExpress.XtraEditors.StepProgressBarItemHyperlinkClickEventArgs.ItemContentBlock">
+      <summary />
+      <value></value>
+    </member>
     <member name="T:DevExpress.XtraEditors.StepProgressBarItemOptions">
       <summary>
         <para>Stores item settings. These settings affect one individual item (if you access them via the StepProgressBarItem.Options property), or all items owned by this control (StepProgressBar.ItemOptions).</para>
@@ -30910,6 +30991,9 @@ The default value is <see cref="F:DevExpress.Utils.DefaultBoolean.Default"/>.</v
       <summary>
         <para>Resets selection and caret position in the editor.</para>
       </summary>
+    </member>
+    <member name="M:DevExpress.XtraEditors.TextEdit.ResetSelection">
+      <summary />
     </member>
     <member name="M:DevExpress.XtraEditors.TextEdit.ScrollToCaret">
       <summary>

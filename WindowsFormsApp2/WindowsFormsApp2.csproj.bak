@@ -35,18 +35,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.CodeParser.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Data.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.DataAccess.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Xpo.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -130,6 +130,18 @@
       <DependentUpon>Anbarda_obyekte_gonderilenler.cs</DependentUpon>
     </Compile>
     <Compile Include="anbarobyektcrud.cs" />
+    <Compile Include="ANBAR_GALIGI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ANBAR_GALIGI.Designer.cs">
+      <DependentUpon>ANBAR_GALIGI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ANBAR_MENFEET.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ANBAR_MENFEET.Designer.cs">
+      <DependentUpon>ANBAR_MENFEET.cs</DependentUpon>
+    </Compile>
     <Compile Include="avtorizasiya.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,11 +149,23 @@
       <DependentUpon>avtorizasiya.cs</DependentUpon>
     </Compile>
     <Compile Include="admin_control.cs" />
+    <Compile Include="GAIME_SATISI_LAYOUT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GAIME_SATISI_LAYOUT.designer.cs">
+      <DependentUpon>GAIME_SATISI_LAYOUT.cs</DependentUpon>
+    </Compile>
     <Compile Include="GAIME_SATIS_DETAILS.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GAIME_SATIS_DETAILS.Designer.cs">
       <DependentUpon>GAIME_SATIS_DETAILS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gaytarilan_siyahi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gaytarilan_siyahi.Designer.cs">
+      <DependentUpon>gaytarilan_siyahi.cs</DependentUpon>
     </Compile>
     <Compile Include="kategoriyalar.cs">
       <SubType>Form</SubType>
@@ -161,11 +185,48 @@
     <Compile Include="mehsul_adi_axtar.Designer.cs">
       <DependentUpon>mehsul_adi_axtar.cs</DependentUpon>
     </Compile>
+    <Compile Include="MEHSUL_ALISI_LAYOUT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEHSUL_ALISI_LAYOUT.Designer.cs">
+      <DependentUpon>MEHSUL_ALISI_LAYOUT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MUSTERI_AXTAR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MUSTERI_AXTAR.Designer.cs">
+      <DependentUpon>MUSTERI_AXTAR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteri_gaytar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteri_gaytar.Designer.cs">
+      <DependentUpon>musteri_gaytar.cs</DependentUpon>
+    </Compile>
     <Compile Include="MUSTERI_SIYAHISI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="MUSTERI_SIYAHISI.Designer.cs">
       <DependentUpon>MUSTERI_SIYAHISI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="POS_LAYOUT_NEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="POS_LAYOUT_NEW.designer.cs">
+      <DependentUpon>POS_LAYOUT_NEW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RibbonForm1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RibbonForm1.designer.cs">
+      <DependentUpon>RibbonForm1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="store_.cs" />
+    <Compile Include="TECHIZATCI_SEC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TECHIZATCI_SEC.Designer.cs">
+      <DependentUpon>TECHIZATCI_SEC.cs</DependentUpon>
     </Compile>
     <Compile Include="userParolproc.cs" />
     <Compile Include="CrudAnbar.cs" />
@@ -401,6 +462,12 @@
     <EmbeddedResource Include="Anbarda_obyekte_gonderilenler.resx">
       <DependentUpon>Anbarda_obyekte_gonderilenler.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ANBAR_GALIGI.resx">
+      <DependentUpon>ANBAR_GALIGI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ANBAR_MENFEET.resx">
+      <DependentUpon>ANBAR_MENFEET.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="avtorizasiya.resx">
       <DependentUpon>avtorizasiya.cs</DependentUpon>
     </EmbeddedResource>
@@ -413,8 +480,14 @@
     <EmbeddedResource Include="GAIME_SATISI.resx">
       <DependentUpon>GAIME_SATISI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GAIME_SATISI_LAYOUT.resx">
+      <DependentUpon>GAIME_SATISI_LAYOUT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GAIME_SATIS_GAYTARMA.resx">
       <DependentUpon>GAIME_SATIS_GAYTARMA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gaytarilan_siyahi.resx">
+      <DependentUpon>gaytarilan_siyahi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GAYTARMA_AXTARİS.resx">
       <DependentUpon>GAYTARMA_AXTARİS.cs</DependentUpon>
@@ -434,6 +507,9 @@
     <EmbeddedResource Include="mehsul_adi_axtar.resx">
       <DependentUpon>mehsul_adi_axtar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MEHSUL_ALISI_LAYOUT.resx">
+      <DependentUpon>MEHSUL_ALISI_LAYOUT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MEHSUL_ALİSİ.resx">
       <DependentUpon>MEHSUL_ALİSİ.cs</DependentUpon>
     </EmbeddedResource>
@@ -445,6 +521,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="bank.resx">
       <DependentUpon>bank.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MUSTERI_AXTAR.resx">
+      <DependentUpon>MUSTERI_AXTAR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteri_gaytar.resx">
+      <DependentUpon>musteri_gaytar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MUSTERI_SIYAHISI.resx">
       <DependentUpon>MUSTERI_SIYAHISI.cs</DependentUpon>
@@ -470,6 +552,9 @@
     <EmbeddedResource Include="POS_GAYTARMA_BAXIS.resx">
       <DependentUpon>POS_GAYTARMA_BAXIS.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="POS_LAYOUT_NEW.resx">
+      <DependentUpon>POS_LAYOUT_NEW.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="POS_MEHSUL_AXTARIS.resx">
       <DependentUpon>POS_MEHSUL_AXTARIS.cs</DependentUpon>
     </EmbeddedResource>
@@ -486,6 +571,9 @@
     </Compile>
     <EmbeddedResource Include="anaEkranOLD.resx">
       <DependentUpon>anaEkranOLD.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RibbonForm1.resx">
+      <DependentUpon>RibbonForm1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RibbonForm2.resx">
       <DependentUpon>RibbonForm2.cs</DependentUpon>
@@ -504,6 +592,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TECHIZATCI_ODENISI.resx">
       <DependentUpon>TECHIZATCI_ODENISI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TECHIZATCI_SEC.resx">
+      <DependentUpon>TECHIZATCI_SEC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TECHİZATCİ.resx">
       <DependentUpon>TECHİZATCİ.cs</DependentUpon>
@@ -704,6 +795,87 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\clearall.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clearall1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\barcodeshowtext.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_order_item.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shopping_shoppingcart.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_checkcircled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_checkcircled1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_price.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_price1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_price2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_price3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_cash.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\business_creditcard.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\changeview3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_checkcircled2.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_checkcircled3.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_checkcircled4.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_checkcircled5.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_addcircled.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\floatingobjectbringtofrontoftext.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\insertlistbox.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\actions_arrow4left.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multipledocuments.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\properties1.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bo_lead.svg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editrangepermission.svg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets" Condition="Exists('..\packages\System.Text.Json.6.0.0\build\System.Text.Json.targets')" />

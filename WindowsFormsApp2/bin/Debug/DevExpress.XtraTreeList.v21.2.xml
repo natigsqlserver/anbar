@@ -7008,6 +7008,11 @@
       </summary>
       <value>An image collection (DevExpress.Utils.ImageCollection or DevExpress.Utils.SvgImageCollection).</value>
     </member>
+    <member name="E:DevExpress.XtraTreeList.TreeList.HyperlinkClick">
+      <summary>
+        <para>Fires when a hyperlink in a column or band header is activated.</para>
+      </summary>
+    </member>
     <member name="P:DevExpress.XtraTreeList.TreeList.ImageIndexFieldName">
       <summary>
         <para>Gets or sets the name of the field whose values represent select image indexes for corresponding nodes.</para>
@@ -8294,6 +8299,10 @@ Or, a <see cref="P:DevExpress.Utils.OptionsLayoutBase.FullLayout"/> object, to s
       </summary>
       <value></value>
     </member>
+    <member name="P:DevExpress.XtraTreeList.TreeList.UseAdvancedCustomizationForm">
+      <summary />
+      <value></value>
+    </member>
     <member name="P:DevExpress.XtraTreeList.TreeList.UseDirectXPaint">
       <summary>
         <para>Gets or sets whether the DirectX Hardware Acceleration is enabled for this Tree List control.</para>
@@ -9232,6 +9241,12 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
       </summary>
       <value>true to expand the collapsed node if it matches the search criteria; otherwise, false.</value>
     </member>
+    <member name="P:DevExpress.XtraTreeList.TreeListOptionsBehavior.HyperlinkClickMode">
+      <summary>
+        <para>Gets or sets whether and how hyperlinks in column and band headers are activated.</para>
+      </summary>
+      <value>A value that specifies whether and how hyperlinks in column and band headers are activated.</value>
+    </member>
     <member name="P:DevExpress.XtraTreeList.TreeListOptionsBehavior.ImmediateEditor">
       <summary>
         <para>Gets or sets whether an in-place editor is automatically activated when a cell is clicked.</para>
@@ -9350,8 +9365,10 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
       </summary>
     </member>
     <member name="P:DevExpress.XtraTreeList.TreeListOptionsCustomization.AdvancedCustomizationFormSortMode">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Gets or sets whether and how column/band headers are sorted within the advanced Customization Form.</para>
+      </summary>
+      <value>A value that specifies whether and how column/band headers are sorted in the advanced Customization Form.</value>
     </member>
     <member name="P:DevExpress.XtraTreeList.TreeListOptionsCustomization.AllowBandMoving">
       <summary>
@@ -9432,8 +9449,10 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
       <value>true if hidden bands are displayed in the Customization Form; otherwise, false.</value>
     </member>
     <member name="P:DevExpress.XtraTreeList.TreeListOptionsCustomization.UseAdvancedCustomizationForm">
-      <summary />
-      <value></value>
+      <summary>
+        <para>Gets or sets whether to use the advanced Customization Form.</para>
+      </summary>
+      <value>True, to use the advanced Customization Form; Default or False, to use the default Customization Form.</value>
     </member>
     <member name="T:DevExpress.XtraTreeList.TreeListOptionsDragAndDrop">
       <summary>

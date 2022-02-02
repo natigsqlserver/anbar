@@ -14,9 +14,27 @@ namespace WindowsFormsApp2
 {
     public partial class RibbonForm1 : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        public RibbonForm1()
+        public static int u_id;
+        public RibbonForm1(int xuser,int user_id)
         {
             InitializeComponent();
+            u_id = user_id;
+            if (xuser < 1)
+            {
+                barButtonItem44.Enabled = false;
+                barSubItem7.Enabled = false;
+                barSubItem6.Enabled = false;
+                barButtonItem24.Enabled = false;
+                barSubItem5.Enabled = false;
+                barSubItem4.Enabled = false;
+                barSubItem2.Enabled = false;
+                barSubItem1.Enabled = false;
+                barButtonItem14.Enabled = false;
+                barButtonItem4.Enabled = false;
+                barButtonItem3.Enabled = false;
+                barButtonItem2.Enabled = false;
+                barButtonItem1.Enabled = false;
+            }
             //ButtDisable();
 
             //avtorizasiya av = new avtorizasiya();
@@ -182,24 +200,24 @@ namespace WindowsFormsApp2
                 MA.Show();
             }
         }
-       MEHSUL_GAYTARMA MG;
+       //MEHSUL_GAYTARMA MG;
         private void barButtonItem10_ItemClick(object sender, ItemClickEventArgs e)
         {
-            if (Application.OpenForms["MEHSUL_GAYTARMA"] != null)
-            {
-                var Main = Application.OpenForms["MEHSUL_GAYTARMA"] as MEHSUL_GAYTARMA;
-                if (Main != null)
-                {
+            //if (Application.OpenForms["MEHSUL_GAYTARMA"] != null)
+            //{
+            //    var Main = Application.OpenForms["MEHSUL_GAYTARMA"] as MEHSUL_GAYTARMA;
+            //    if (Main != null)
+            //    {
 
-                }
-                  //  Main.Close();
-            }
-            else
-            {
-                MG = new MEHSUL_GAYTARMA();
-                MG.Show();
+            //    }
+            //      //  Main.Close();
+            //}
+            //else
+            //{
+            //    MG = new MEHSUL_GAYTARMA();
+            //    MG.Show();
 
-            }
+            //}
         }
 
         GAIME_SATISI_LAYOUT GS;
@@ -407,8 +425,11 @@ namespace WindowsFormsApp2
 
         private void barButtonItem31_ItemClick(object sender, ItemClickEventArgs e)
         {
-            SATIS_HESABATI S = new SATIS_HESABATI();
-            S.Show();
+            //  SATIS_HESABATI S = new SATIS_HESABATI();
+            // S.Show();
+
+            ANBAR_GALIGI A = new ANBAR_GALIGI();
+            A.Show();
         }
 
         private void ribbon_Click(object sender, EventArgs e)
@@ -419,6 +440,36 @@ namespace WindowsFormsApp2
         private void RibbonForm1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void barButtonItem45_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            POS_LAYOUT_NEW P = new POS_LAYOUT_NEW(u_id);
+            P.Show();
+        }
+
+        private void barButtonItem32_ItemClick(object sender, ItemClickEventArgs e)
+        {
+
+        }
+
+        private void barButtonItem40_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            ANBAR_MENFEET AMF = new ANBAR_MENFEET();
+            AMF.Show();
+        }
+
+        private void barButtonItem44_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            UserQeydiyyat ug = new UserQeydiyyat();
+            ug.Show();
+        }
+
+        private void barButtonItem37_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            //alis hesabati
+            MEHSUL_ALIS_HESABATI MH = new MEHSUL_ALIS_HESABATI();
+            MH.ShowDialog();
         }
     }
 }

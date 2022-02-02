@@ -69,7 +69,6 @@ namespace WindowsFormsApp2
             this.barButtonItem30 = new DevExpress.XtraBars.BarButtonItem();
             this.barSubItem7 = new DevExpress.XtraBars.BarSubItem();
             this.barButtonItem31 = new DevExpress.XtraBars.BarButtonItem();
-            this.barButtonItem32 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem33 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem34 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem35 = new DevExpress.XtraBars.BarButtonItem();
@@ -81,7 +80,9 @@ namespace WindowsFormsApp2
             this.barButtonItem41 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem42 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem43 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem32 = new DevExpress.XtraBars.BarButtonItem();
             this.barButtonItem44 = new DevExpress.XtraBars.BarButtonItem();
+            this.barButtonItem45 = new DevExpress.XtraBars.BarButtonItem();
             this.ribbonPage1 = new DevExpress.XtraBars.Ribbon.RibbonPage();
             this.ribbonPageGroup1 = new DevExpress.XtraBars.Ribbon.RibbonPageGroup();
             this.ribbonStatusBar = new DevExpress.XtraBars.Ribbon.RibbonStatusBar();
@@ -90,7 +91,6 @@ namespace WindowsFormsApp2
             // 
             // ribbon
             // 
-            this.ribbon.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(45, 44, 45, 44);
             this.ribbon.ExpandCollapseItem.Id = 0;
             this.ribbon.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbon.ExpandCollapseItem,
@@ -145,15 +145,14 @@ namespace WindowsFormsApp2
             this.barButtonItem41,
             this.barButtonItem42,
             this.barButtonItem43,
-            this.barButtonItem44});
+            this.barButtonItem44,
+            this.barButtonItem45});
             this.ribbon.Location = new System.Drawing.Point(0, 0);
-            this.ribbon.Margin = new System.Windows.Forms.Padding(4);
-            this.ribbon.MaxItemId = 54;
+            this.ribbon.MaxItemId = 55;
             this.ribbon.Name = "ribbon";
-            this.ribbon.OptionsMenuMinWidth = 495;
             this.ribbon.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
-            this.ribbon.Size = new System.Drawing.Size(1944, 231);
+            this.ribbon.Size = new System.Drawing.Size(1079, 158);
             this.ribbon.StatusBar = this.ribbonStatusBar;
             this.ribbon.Click += new System.EventHandler(this.ribbon_Click);
             // 
@@ -433,7 +432,6 @@ namespace WindowsFormsApp2
             this.barSubItem7.ImageOptions.LargeImage = ((System.Drawing.Image)(resources.GetObject("barSubItem7.ImageOptions.LargeImage")));
             this.barSubItem7.LinksPersistInfo.AddRange(new DevExpress.XtraBars.LinkPersistInfo[] {
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem31),
-            new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem32),
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem33),
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem34, true),
             new DevExpress.XtraBars.LinkPersistInfo(this.barButtonItem35),
@@ -449,16 +447,10 @@ namespace WindowsFormsApp2
             // 
             // barButtonItem31
             // 
-            this.barButtonItem31.Caption = "SATIŞ HESABATI";
+            this.barButtonItem31.Caption = "ANBAR QALIĞI";
             this.barButtonItem31.Id = 38;
             this.barButtonItem31.Name = "barButtonItem31";
             this.barButtonItem31.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem31_ItemClick);
-            // 
-            // barButtonItem32
-            // 
-            this.barButtonItem32.Caption = "SA";
-            this.barButtonItem32.Id = 39;
-            this.barButtonItem32.Name = "barButtonItem32";
             // 
             // barButtonItem33
             // 
@@ -489,6 +481,7 @@ namespace WindowsFormsApp2
             this.barButtonItem37.Caption = "MƏHSUL ALIŞ HESABATI";
             this.barButtonItem37.Id = 44;
             this.barButtonItem37.Name = "barButtonItem37";
+            this.barButtonItem37.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem37_ItemClick);
             // 
             // barButtonItem38
             // 
@@ -504,9 +497,10 @@ namespace WindowsFormsApp2
             // 
             // barButtonItem40
             // 
-            this.barButtonItem40.Caption = "MƏNFƏƏT HESABATI";
+            this.barButtonItem40.Caption = "ANBAR MƏNFƏƏT HESABATI";
             this.barButtonItem40.Id = 47;
             this.barButtonItem40.Name = "barButtonItem40";
+            this.barButtonItem40.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem40_ItemClick);
             // 
             // barButtonItem41
             // 
@@ -526,12 +520,28 @@ namespace WindowsFormsApp2
             this.barButtonItem43.Id = 50;
             this.barButtonItem43.Name = "barButtonItem43";
             // 
+            // barButtonItem32
+            // 
+            this.barButtonItem32.Caption = "SA";
+            this.barButtonItem32.Id = 39;
+            this.barButtonItem32.Name = "barButtonItem32";
+            this.barButtonItem32.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem32_ItemClick);
+            // 
             // barButtonItem44
             // 
             this.barButtonItem44.Caption = "QEYDIYYAT";
             this.barButtonItem44.Id = 52;
             this.barButtonItem44.ImageOptions.SvgImage = global::WindowsFormsApp2.Properties.Resources.editrangepermission;
             this.barButtonItem44.Name = "barButtonItem44";
+            this.barButtonItem44.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem44_ItemClick);
+            // 
+            // barButtonItem45
+            // 
+            this.barButtonItem45.Caption = "YENI_POS";
+            this.barButtonItem45.Id = 54;
+            this.barButtonItem45.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("barButtonItem45.ImageOptions.SvgImage")));
+            this.barButtonItem45.Name = "barButtonItem45";
+            this.barButtonItem45.ItemClick += new DevExpress.XtraBars.ItemClickEventHandler(this.barButtonItem45_ItemClick);
             // 
             // ribbonPage1
             // 
@@ -556,25 +566,24 @@ namespace WindowsFormsApp2
             this.ribbonPageGroup1.ItemLinks.Add(this.barSubItem6);
             this.ribbonPageGroup1.ItemLinks.Add(this.barSubItem7);
             this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem44);
+            this.ribbonPageGroup1.ItemLinks.Add(this.barButtonItem45);
             this.ribbonPageGroup1.Name = "ribbonPageGroup1";
             this.ribbonPageGroup1.Text = "əsas məlumatlar";
             // 
             // ribbonStatusBar
             // 
-            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 1034);
-            this.ribbonStatusBar.Margin = new System.Windows.Forms.Padding(4);
+            this.ribbonStatusBar.Location = new System.Drawing.Point(0, 605);
             this.ribbonStatusBar.Name = "ribbonStatusBar";
             this.ribbonStatusBar.Ribbon = this.ribbon;
-            this.ribbonStatusBar.Size = new System.Drawing.Size(1944, 36);
+            this.ribbonStatusBar.Size = new System.Drawing.Size(1079, 24);
             // 
             // RibbonForm1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1944, 1070);
+            this.ClientSize = new System.Drawing.Size(1079, 629);
             this.Controls.Add(this.ribbonStatusBar);
             this.Controls.Add(this.ribbon);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "RibbonForm1";
             this.Ribbon = this.ribbon;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -645,5 +654,6 @@ namespace WindowsFormsApp2
         private DevExpress.XtraBars.BarButtonItem barButtonItem42;
         private DevExpress.XtraBars.BarButtonItem barButtonItem43;
         private DevExpress.XtraBars.BarButtonItem barButtonItem44;
+        private DevExpress.XtraBars.BarButtonItem barButtonItem45;
     }
 }

@@ -199,24 +199,24 @@ namespace WindowsFormsApp2
                 MA.Show();
             }
         }
-        MEHSUL_GAYTARMA MG;
+        //MEHSUL_GAYTARMA MG;
         private void barButtonItem2_ItemClick(object sender, ItemClickEventArgs e)
         {
-            if (Application.OpenForms["MEHSUL_GAYTARMA"] != null)
-            {
-                var Main = Application.OpenForms["MEHSUL_GAYTARMA"] as MEHSUL_GAYTARMA;
-                if (Main != null)
-                {
+            //if (Application.OpenForms["MEHSUL_GAYTARMA"] != null)
+            //{
+            //    var Main = Application.OpenForms["MEHSUL_GAYTARMA"] as MEHSUL_GAYTARMA;
+            //    if (Main != null)
+            //    {
 
-                }
-                  //  Main.Close();
-            }
-            else
-            {
-                MG = new MEHSUL_GAYTARMA();
-                MG.Show();
+            //    }
+            //      //  Main.Close();
+            //}
+            //else
+            //{
+            //    MG = new MEHSUL_GAYTARMA();
+            //    MG.Show();
 
-            }
+            //}
         }
 
         GAIME_SATISI_LAYOUT GS;

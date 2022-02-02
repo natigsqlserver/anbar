@@ -4030,7 +4030,7 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
     </member>
     <member name="P:DevExpress.Utils.ContextItemCollectionOptions.HoverStateOpacity">
       <summary>
-        <para>Gets or sets opacity for hovered conteext items.</para>
+        <para>Gets or sets opacity for hovered context items.</para>
       </summary>
       <value>A value between 0 and 1 that determines opacity; 1 is for “opaque”, 0 is for “transparent”.</value>
     </member>
@@ -6653,6 +6653,31 @@ The DefaultBoolean.Default value is equivalent to DefaultBoolean.True if the sta
         <para>Returns whether or not the application currently uses the DirectX Hardware Acceleration.</para>
       </summary>
       <value>true if the application currently uses the DirectX Hardware Acceleration; otherwise, false.</value>
+    </member>
+    <member name="T:DevExpress.Utils.Drawing.HyperlinkClickMode">
+      <summary>
+        <para>Contains values that specify how users can activate hyperlinks embedded in control headers.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Utils.Drawing.HyperlinkClickMode.Click">
+      <summary>
+        <para>A hyperlink is activated on a mouse click.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Utils.Drawing.HyperlinkClickMode.CtrlClick">
+      <summary>
+        <para>A hyperlink is activated on a mouse click when the CTRL key is pressed down.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Utils.Drawing.HyperlinkClickMode.Default">
+      <summary>
+        <para>The same as the None option.</para>
+      </summary>
+    </member>
+    <member name="F:DevExpress.Utils.Drawing.HyperlinkClickMode.None">
+      <summary>
+        <para>Do not activate a hyperlink on a mouse pointer hover or click event.</para>
+      </summary>
     </member>
     <member name="T:DevExpress.Utils.Drawing.ImageLayoutMode">
       <summary>
@@ -10819,7 +10844,7 @@ The <see cref="F:DevExpress.Utils.DefaultBoolean.Default"/> value is equal to <s
     </member>
     <member name="P:DevExpress.Utils.TextOptions.HotkeyPrefix">
       <summary>
-        <para>Gets or sets whether or not to underline characters that are preceded with an ampersand symbol (&amp;). This option is supported by a set of controls.</para>
+        <para>Gets or sets whether to underline characters that are preceded with an ampersand symbol (&amp;). This option is supported by a set of controls.</para>
       </summary>
       <value>A value that specifies how to interpret an ampersand character (&amp;) in text.</value>
     </member>

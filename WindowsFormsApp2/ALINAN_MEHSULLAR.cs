@@ -22,8 +22,11 @@ namespace WindowsFormsApp2
 
         private void ALINAN_MEHSULLAR_Load(object sender, EventArgs e)
         {
-            
-          
+            DateTime dateTime = DateTime.UtcNow.Date;
+
+            dateEdit1.Text = dateTime.ToShortDateString();
+            dateEdit2.Text = dateTime.ToShortDateString();
+
         }
 
         private void LOAD(DateTime d1,DateTime d2)

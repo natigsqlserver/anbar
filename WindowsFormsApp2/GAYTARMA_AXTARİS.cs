@@ -18,10 +18,11 @@ namespace WindowsFormsApp2
 {
     public partial class GAYTARMA_AXTARİS : DevExpress.XtraBars.Ribbon.RibbonForm
     {
-        private readonly MEHSUL_GAYTARMA frm1;
-        public GAYTARMA_AXTARİS(MEHSUL_GAYTARMA frm)
+       // private readonly MEHSUL_GAYTARMA frm1;
+        public GAYTARMA_AXTARİS(//MEHSUL_GAYTARMA frm
+            )
         {
-            frm1 = frm;
+            //frm1 = frm;
             GridLocalizer.Active = new GermanGridLocalizer();
             Localizer.Active = new GermanEditorsLocalizer();
             InitializeComponent();
@@ -171,7 +172,7 @@ namespace WindowsFormsApp2
         private void GAYTARMA_AXTARİS_FormClosing(object sender, FormClosingEventArgs e)
         {
 
-            frm1.getall();
+          //  frm1.getall();
         }
     }
 }

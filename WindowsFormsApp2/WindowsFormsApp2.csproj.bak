@@ -35,18 +35,18 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.CodeParser.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Data.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.DataAccess.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.Xpo.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
-    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
-    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.CodeParser.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v21.2.Core, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Xpo.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
     <Reference Include="Microsoft.Bcl.AsyncInterfaces, Version=6.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Bcl.AsyncInterfaces.6.0.0\lib\net461\Microsoft.Bcl.AsyncInterfaces.dll</HintPath>
     </Reference>
@@ -149,6 +149,12 @@
       <DependentUpon>avtorizasiya.cs</DependentUpon>
     </Compile>
     <Compile Include="admin_control.cs" />
+    <Compile Include="AVTORIZASIYA_NEW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AVTORIZASIYA_NEW.Designer.cs">
+      <DependentUpon>AVTORIZASIYA_NEW.cs</DependentUpon>
+    </Compile>
     <Compile Include="GAIME_SATISI_LAYOUT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -190,6 +196,12 @@
     </Compile>
     <Compile Include="MEHSUL_ALISI_LAYOUT.Designer.cs">
       <DependentUpon>MEHSUL_ALISI_LAYOUT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MEHSUL_ALIS_HESABATI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MEHSUL_ALIS_HESABATI.Designer.cs">
+      <DependentUpon>MEHSUL_ALIS_HESABATI.cs</DependentUpon>
     </Compile>
     <Compile Include="MUSTERI_AXTAR.cs">
       <SubType>Form</SubType>
@@ -286,12 +298,6 @@
     </Compile>
     <Compile Include="MEHSUL_ALİSİ.Designer.cs">
       <DependentUpon>MEHSUL_ALİSİ.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MEHSUL_GAYTARMA.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MEHSUL_GAYTARMA.Designer.cs">
-      <DependentUpon>MEHSUL_GAYTARMA.cs</DependentUpon>
     </Compile>
     <Compile Include="MEHSUL_GAYTARMA_AXTARIS_CRUD.cs" />
     <Compile Include="MUSTERILER.cs">
@@ -471,6 +477,9 @@
     <EmbeddedResource Include="avtorizasiya.resx">
       <DependentUpon>avtorizasiya.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="AVTORIZASIYA_NEW.resx">
+      <DependentUpon>AVTORIZASIYA_NEW.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ENDIRIM_POS.resx">
       <DependentUpon>ENDIRIM_POS.cs</DependentUpon>
     </EmbeddedResource>
@@ -510,11 +519,11 @@
     <EmbeddedResource Include="MEHSUL_ALISI_LAYOUT.resx">
       <DependentUpon>MEHSUL_ALISI_LAYOUT.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MEHSUL_ALIS_HESABATI.resx">
+      <DependentUpon>MEHSUL_ALIS_HESABATI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MEHSUL_ALİSİ.resx">
       <DependentUpon>MEHSUL_ALİSİ.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MEHSUL_GAYTARMA.resx">
-      <DependentUpon>MEHSUL_GAYTARMA.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MUSTERILER.resx">
       <DependentUpon>MUSTERILER.cs</DependentUpon>

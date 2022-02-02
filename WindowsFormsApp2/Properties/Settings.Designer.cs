@@ -25,8 +25,8 @@ namespace WindowsFormsApp2.Properties {
         
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-K8BMPE8\\MSSQLSERVERNEW;Initial Catalog=NewIntekobir;Integrate" +
-            "d Security=True")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-UB3DILS;Initial Catalog=NewIntekobir;Integrated Security=True" +
+            "")]
         public string SqlCon {
             get {
                 return ((string)(this["SqlCon"]));

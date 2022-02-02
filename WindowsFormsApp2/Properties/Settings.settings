@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="SqlCon" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Data Source=DESKTOP-K8BMPE8\MSSQLSERVERNEW;Initial Catalog=NewIntekobir;Integrated Security=True</Value>
+      <Value Profile="(Default)">Data Source=DESKTOP-UB3DILS;Initial Catalog=NewIntekobir;Integrated Security=True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

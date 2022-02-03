@@ -57,22 +57,26 @@ namespace WindowsFormsApp2
             // 
             // gridControl1
             // 
-            this.gridControl1.Location = new System.Drawing.Point(0, 226);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridControl1.Location = new System.Drawing.Point(0, 330);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1311, 460);
+            this.gridControl1.Size = new System.Drawing.Size(1966, 672);
             this.gridControl1.TabIndex = 0;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
+            this.gridView1.DetailHeight = 512;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // ribbonControl1
             // 
+            this.ribbonControl1.EmptyAreaImageOptions.ImagePadding = new System.Windows.Forms.Padding(45, 44, 45, 44);
             this.ribbonControl1.ExpandCollapseItem.Id = 0;
             this.ribbonControl1.Items.AddRange(new DevExpress.XtraBars.BarItem[] {
             this.ribbonControl1.ExpandCollapseItem,
@@ -81,12 +85,14 @@ namespace WindowsFormsApp2
             this.barButtonItem2,
             this.barButtonItem3});
             this.ribbonControl1.Location = new System.Drawing.Point(0, 0);
+            this.ribbonControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ribbonControl1.MaxItemId = 4;
             this.ribbonControl1.Name = "ribbonControl1";
+            this.ribbonControl1.OptionsMenuMinWidth = 495;
             this.ribbonControl1.Pages.AddRange(new DevExpress.XtraBars.Ribbon.RibbonPage[] {
             this.ribbonPage1});
             this.ribbonControl1.RibbonStyle = DevExpress.XtraBars.Ribbon.RibbonControlStyle.MacOffice;
-            this.ribbonControl1.Size = new System.Drawing.Size(1311, 133);
+            this.ribbonControl1.Size = new System.Drawing.Size(1944, 192);
             this.ribbonControl1.Click += new System.EventHandler(this.ribbonControl1_Click);
             // 
             // barButtonItem1
@@ -129,34 +135,38 @@ namespace WindowsFormsApp2
             // 
             // textEdit1
             // 
-            this.textEdit1.Location = new System.Drawing.Point(121, 148);
+            this.textEdit1.Location = new System.Drawing.Point(182, 216);
+            this.textEdit1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textEdit1.MenuManager = this.ribbonControl1;
             this.textEdit1.Name = "textEdit1";
-            this.textEdit1.Size = new System.Drawing.Size(277, 20);
+            this.textEdit1.Size = new System.Drawing.Size(416, 26);
             this.textEdit1.TabIndex = 1;
             this.textEdit1.EditValueChanged += new System.EventHandler(this.textEdit1_EditValueChanged);
             // 
             // textEdit2
             // 
-            this.textEdit2.Location = new System.Drawing.Point(121, 174);
+            this.textEdit2.Location = new System.Drawing.Point(182, 254);
+            this.textEdit2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textEdit2.Name = "textEdit2";
-            this.textEdit2.Size = new System.Drawing.Size(277, 20);
+            this.textEdit2.Size = new System.Drawing.Size(416, 26);
             this.textEdit2.TabIndex = 1;
             // 
             // textEdit3
             // 
-            this.textEdit3.Location = new System.Drawing.Point(121, 200);
+            this.textEdit3.Location = new System.Drawing.Point(182, 292);
+            this.textEdit3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(126, 20);
+            this.textEdit3.Size = new System.Drawing.Size(189, 26);
             this.textEdit3.TabIndex = 1;
             // 
             // labelControl1
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(73, 151);
+            this.labelControl1.Location = new System.Drawing.Point(110, 221);
+            this.labelControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(37, 13);
+            this.labelControl1.Size = new System.Drawing.Size(62, 21);
             this.labelControl1.TabIndex = 2;
             this.labelControl1.Text = "ÜNVAN";
             // 
@@ -164,9 +174,10 @@ namespace WindowsFormsApp2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(38, 177);
+            this.labelControl2.Location = new System.Drawing.Point(57, 259);
+            this.labelControl2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(77, 13);
+            this.labelControl2.Size = new System.Drawing.Size(121, 21);
             this.labelControl2.TabIndex = 2;
             this.labelControl2.Text = "MÜQAVİLƏ №";
             // 
@@ -174,33 +185,36 @@ namespace WindowsFormsApp2
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(63, 203);
+            this.labelControl3.Location = new System.Drawing.Point(94, 297);
+            this.labelControl3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(46, 13);
+            this.labelControl3.Size = new System.Drawing.Size(76, 21);
             this.labelControl3.TabIndex = 2;
             this.labelControl3.Text = "TELEFON";
             // 
             // labelControl4
             // 
-            this.labelControl4.Location = new System.Drawing.Point(542, 96);
+            this.labelControl4.Location = new System.Drawing.Point(813, 140);
+            this.labelControl4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(63, 13);
+            this.labelControl4.Size = new System.Drawing.Size(94, 19);
             this.labelControl4.TabIndex = 4;
             this.labelControl4.Text = "labelControl4";
             this.labelControl4.Visible = false;
             // 
             // textEdit4
             // 
-            this.textEdit4.Location = new System.Drawing.Point(253, 200);
+            this.textEdit4.Location = new System.Drawing.Point(380, 292);
+            this.textEdit4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(145, 20);
+            this.textEdit4.Size = new System.Drawing.Size(218, 26);
             this.textEdit4.TabIndex = 1;
             // 
             // SearchTechizatci
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1311, 517);
+            this.ClientSize = new System.Drawing.Size(1944, 756);
             this.Controls.Add(this.labelControl4);
             this.Controls.Add(this.labelControl3);
             this.Controls.Add(this.labelControl2);
@@ -211,6 +225,7 @@ namespace WindowsFormsApp2
             this.Controls.Add(this.textEdit1);
             this.Controls.Add(this.ribbonControl1);
             this.Controls.Add(this.gridControl1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "SearchTechizatci";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TƏCHİZATÇILAR";

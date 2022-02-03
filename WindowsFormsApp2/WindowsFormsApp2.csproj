@@ -149,12 +149,6 @@
       <DependentUpon>avtorizasiya.cs</DependentUpon>
     </Compile>
     <Compile Include="admin_control.cs" />
-    <Compile Include="AVTORIZASIYA_NEW.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AVTORIZASIYA_NEW.Designer.cs">
-      <DependentUpon>AVTORIZASIYA_NEW.cs</DependentUpon>
-    </Compile>
     <Compile Include="GAIME_SATISI_LAYOUT.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -476,9 +470,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="avtorizasiya.resx">
       <DependentUpon>avtorizasiya.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AVTORIZASIYA_NEW.resx">
-      <DependentUpon>AVTORIZASIYA_NEW.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ENDIRIM_POS.resx">
       <DependentUpon>ENDIRIM_POS.cs</DependentUpon>

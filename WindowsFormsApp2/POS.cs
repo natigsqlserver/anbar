@@ -260,7 +260,7 @@ namespace WindowsFormsApp2
                   //  MessageBox.Show(dr["say"].ToString());
                     for (int i = 0; i < Convert.ToInt32(dr["say"]); i++)
                     {
-                        st.insert_calculation_data(textEdit11.Text.ToString(), Convert.ToInt32(dr["mal_details_id"].ToString()), dr["BARKOD"].ToString(), dr["MƏHSUL ADI"].ToString(), Convert.ToDecimal(dr["SATIŞ QİYMƏTİ"].ToString()));
+                        st.insert_calculation_data(textEdit1.Text.ToString(), Convert.ToInt32(dr["mal_details_id"].ToString()), dr["BARKOD"].ToString(), dr["MƏHSUL ADI"].ToString(), Convert.ToDecimal(dr["SATIŞ QİYMƏTİ"].ToString()));
 
                     }
 

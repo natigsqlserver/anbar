@@ -103,10 +103,9 @@ namespace WindowsFormsApp2
             this.simpleButton1.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton1.Appearance.Options.UseFont = true;
             this.simpleButton1.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton1.ImageOptions.SvgImage")));
-            this.simpleButton1.Location = new System.Drawing.Point(1489, 610);
-            this.simpleButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton1.Location = new System.Drawing.Point(993, 417);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(141, 75);
+            this.simpleButton1.Size = new System.Drawing.Size(94, 51);
             this.simpleButton1.TabIndex = 1;
             this.simpleButton1.Text = "AXTAR";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
@@ -116,35 +115,32 @@ namespace WindowsFormsApp2
             this.simpleButton3.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton3.Appearance.Options.UseFont = true;
             this.simpleButton3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton3.ImageOptions.SvgImage")));
-            this.simpleButton3.Location = new System.Drawing.Point(1215, 458);
-            this.simpleButton3.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton3.Location = new System.Drawing.Point(810, 313);
             this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(132, 75);
+            this.simpleButton3.Size = new System.Drawing.Size(88, 51);
             this.simpleButton3.TabIndex = 1;
             this.simpleButton3.Text = "ÇAP ET";
             // 
             // textEdit2
             // 
-            this.textEdit2.Location = new System.Drawing.Point(1489, 28);
-            this.textEdit2.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit2.Location = new System.Drawing.Point(993, 19);
             this.textEdit2.Name = "textEdit2";
             this.textEdit2.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 30F);
             this.textEdit2.Properties.Appearance.ForeColor = System.Drawing.Color.Red;
             this.textEdit2.Properties.Appearance.Options.UseFont = true;
             this.textEdit2.Properties.Appearance.Options.UseForeColor = true;
-            this.textEdit2.Size = new System.Drawing.Size(208, 78);
+            this.textEdit2.Size = new System.Drawing.Size(139, 54);
             this.textEdit2.TabIndex = 0;
             this.textEdit2.EditValueChanged += new System.EventHandler(this.textEdit2_EditValueChanged);
             // 
             // textEdit1
             // 
             this.textEdit1.EditValue = "";
-            this.textEdit1.Location = new System.Drawing.Point(80, 125);
-            this.textEdit1.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit1.Location = new System.Drawing.Point(53, 86);
             this.textEdit1.Name = "textEdit1";
             this.textEdit1.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 16F);
             this.textEdit1.Properties.Appearance.Options.UseFont = true;
-            this.textEdit1.Size = new System.Drawing.Size(345, 46);
+            this.textEdit1.Size = new System.Drawing.Size(230, 32);
             this.textEdit1.TabIndex = 2;
             this.textEdit1.EditValueChanged += new System.EventHandler(this.textEdit1_TextChanged);
             this.textEdit1.TextChanged += new System.EventHandler(this.textEdit1_TextChanged);
@@ -152,12 +148,11 @@ namespace WindowsFormsApp2
             // 
             // textEdit5
             // 
-            this.textEdit5.Location = new System.Drawing.Point(80, 180);
-            this.textEdit5.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit5.Location = new System.Drawing.Point(53, 123);
             this.textEdit5.Name = "textEdit5";
             this.textEdit5.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 16F);
             this.textEdit5.Properties.Appearance.Options.UseFont = true;
-            this.textEdit5.Size = new System.Drawing.Size(345, 46);
+            this.textEdit5.Size = new System.Drawing.Size(230, 32);
             this.textEdit5.TabIndex = 2;
             this.textEdit5.EditValueChanged += new System.EventHandler(this.textEdit5_TextChanged);
             this.textEdit5.TextChanged += new System.EventHandler(this.textEdit5_TextChanged);
@@ -172,16 +167,14 @@ namespace WindowsFormsApp2
             this.panel2.Controls.Add(this.labelControl6);
             this.panel2.Controls.Add(this.textEdit9);
             this.panel2.Controls.Add(this.labelControl2);
-            this.panel2.Location = new System.Drawing.Point(1215, 255);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4);
+            this.panel2.Location = new System.Drawing.Point(810, 174);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(416, 171);
+            this.panel2.Size = new System.Drawing.Size(277, 117);
             this.panel2.TabIndex = 3;
             // 
             // textEdit10
             // 
-            this.textEdit10.Location = new System.Drawing.Point(208, 113);
-            this.textEdit10.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit10.Location = new System.Drawing.Point(139, 77);
             this.textEdit10.Name = "textEdit10";
             this.textEdit10.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textEdit10.Properties.Appearance.Options.UseFont = true;
@@ -189,24 +182,22 @@ namespace WindowsFormsApp2
             this.textEdit10.Properties.MaskSettings.Set("mask", "f3");
             this.textEdit10.Properties.NullText = "0";
             this.textEdit10.Properties.UseMaskAsDisplayFormat = true;
-            this.textEdit10.Size = new System.Drawing.Size(200, 36);
+            this.textEdit10.Size = new System.Drawing.Size(133, 26);
             this.textEdit10.TabIndex = 34;
             // 
             // labelControl3
             // 
             this.labelControl3.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl3.Appearance.Options.UseFont = true;
-            this.labelControl3.Location = new System.Drawing.Point(49, 116);
-            this.labelControl3.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl3.Location = new System.Drawing.Point(33, 79);
             this.labelControl3.Name = "labelControl3";
-            this.labelControl3.Size = new System.Drawing.Size(150, 28);
+            this.labelControl3.Size = new System.Drawing.Size(97, 18);
             this.labelControl3.TabIndex = 22;
             this.labelControl3.Text = "GÜZƏŞT AZN";
             // 
             // textEdit6
             // 
-            this.textEdit6.Location = new System.Drawing.Point(208, 19);
-            this.textEdit6.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit6.Location = new System.Drawing.Point(139, 13);
             this.textEdit6.Name = "textEdit6";
             this.textEdit6.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textEdit6.Properties.Appearance.Options.UseFont = true;
@@ -214,24 +205,22 @@ namespace WindowsFormsApp2
             this.textEdit6.Properties.MaskSettings.Set("mask", "f3");
             this.textEdit6.Properties.NullText = "0";
             this.textEdit6.Properties.UseMaskAsDisplayFormat = true;
-            this.textEdit6.Size = new System.Drawing.Size(200, 36);
+            this.textEdit6.Size = new System.Drawing.Size(133, 26);
             this.textEdit6.TabIndex = 34;
             // 
             // labelControl6
             // 
             this.labelControl6.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold);
             this.labelControl6.Appearance.Options.UseFont = true;
-            this.labelControl6.Location = new System.Drawing.Point(10, 23);
-            this.labelControl6.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl6.Location = new System.Drawing.Point(7, 16);
             this.labelControl6.Name = "labelControl6";
-            this.labelControl6.Size = new System.Drawing.Size(194, 28);
+            this.labelControl6.Size = new System.Drawing.Size(126, 18);
             this.labelControl6.TabIndex = 22;
             this.labelControl6.Text = "MİQDARI DƏYİŞ";
             // 
             // textEdit9
             // 
-            this.textEdit9.Location = new System.Drawing.Point(208, 66);
-            this.textEdit9.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit9.Location = new System.Drawing.Point(139, 45);
             this.textEdit9.Name = "textEdit9";
             this.textEdit9.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textEdit9.Properties.Appearance.Options.UseFont = true;
@@ -239,17 +228,16 @@ namespace WindowsFormsApp2
             this.textEdit9.Properties.MaskSettings.Set("mask", "f3");
             this.textEdit9.Properties.NullText = "0";
             this.textEdit9.Properties.UseMaskAsDisplayFormat = true;
-            this.textEdit9.Size = new System.Drawing.Size(200, 36);
+            this.textEdit9.Size = new System.Drawing.Size(133, 26);
             this.textEdit9.TabIndex = 34;
             // 
             // labelControl2
             // 
             this.labelControl2.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl2.Appearance.Options.UseFont = true;
-            this.labelControl2.Location = new System.Drawing.Point(69, 70);
-            this.labelControl2.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl2.Location = new System.Drawing.Point(46, 48);
             this.labelControl2.Name = "labelControl2";
-            this.labelControl2.Size = new System.Drawing.Size(130, 28);
+            this.labelControl2.Size = new System.Drawing.Size(84, 18);
             this.labelControl2.TabIndex = 22;
             this.labelControl2.Text = "GÜZƏŞT %";
             // 
@@ -257,47 +245,43 @@ namespace WindowsFormsApp2
             // 
             this.labelControl26.Appearance.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl26.Appearance.Options.UseFont = true;
-            this.labelControl26.Location = new System.Drawing.Point(1685, 461);
-            this.labelControl26.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl26.Location = new System.Drawing.Point(1123, 315);
             this.labelControl26.Name = "labelControl26";
-            this.labelControl26.Size = new System.Drawing.Size(82, 14);
+            this.labelControl26.Size = new System.Drawing.Size(56, 10);
             this.labelControl26.TabIndex = 37;
             this.labelControl26.Text = "ENDİRİM AZN";
             // 
             // textEdit13
             // 
-            this.textEdit13.Location = new System.Drawing.Point(1685, 493);
-            this.textEdit13.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit13.Location = new System.Drawing.Point(1123, 337);
             this.textEdit13.Name = "textEdit13";
             this.textEdit13.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.textEdit13.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
             this.textEdit13.Properties.MaskSettings.Set("mask", "f3");
             this.textEdit13.Properties.NullText = "0";
             this.textEdit13.Properties.UseMaskAsDisplayFormat = true;
-            this.textEdit13.Size = new System.Drawing.Size(88, 26);
+            this.textEdit13.Size = new System.Drawing.Size(59, 20);
             this.textEdit13.TabIndex = 36;
             // 
             // textEdit7
             // 
-            this.textEdit7.Location = new System.Drawing.Point(1677, 401);
-            this.textEdit7.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit7.Location = new System.Drawing.Point(1118, 274);
             this.textEdit7.Name = "textEdit7";
             this.textEdit7.Properties.MaskSettings.Set("MaskManagerType", typeof(DevExpress.Data.Mask.NumericMaskManager));
             this.textEdit7.Properties.MaskSettings.Set("MaskManagerSignature", "allowNull=False");
             this.textEdit7.Properties.MaskSettings.Set("mask", "p");
             this.textEdit7.Properties.NullText = "0";
             this.textEdit7.Properties.UseMaskAsDisplayFormat = true;
-            this.textEdit7.Size = new System.Drawing.Size(92, 26);
+            this.textEdit7.Size = new System.Drawing.Size(61, 20);
             this.textEdit7.TabIndex = 33;
             // 
             // labelControl17
             // 
             this.labelControl17.Appearance.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl17.Appearance.Options.UseFont = true;
-            this.labelControl17.Location = new System.Drawing.Point(1685, 371);
-            this.labelControl17.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl17.Location = new System.Drawing.Point(1123, 254);
             this.labelControl17.Name = "labelControl17";
-            this.labelControl17.Size = new System.Drawing.Size(72, 14);
+            this.labelControl17.Size = new System.Drawing.Size(50, 10);
             this.labelControl17.TabIndex = 23;
             this.labelControl17.Text = "ENDİRİM %";
             // 
@@ -306,10 +290,9 @@ namespace WindowsFormsApp2
             this.simpleButton5.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton5.Appearance.Options.UseFont = true;
             this.simpleButton5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton5.ImageOptions.SvgImage")));
-            this.simpleButton5.Location = new System.Drawing.Point(1489, 458);
-            this.simpleButton5.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton5.Location = new System.Drawing.Point(993, 313);
             this.simpleButton5.Name = "simpleButton5";
-            this.simpleButton5.Size = new System.Drawing.Size(141, 75);
+            this.simpleButton5.Size = new System.Drawing.Size(94, 51);
             this.simpleButton5.TabIndex = 1;
             this.simpleButton5.Text = "SİL";
             this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
@@ -319,10 +302,9 @@ namespace WindowsFormsApp2
             this.simpleButton6.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton6.Appearance.Options.UseFont = true;
             this.simpleButton6.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton6.ImageOptions.SvgImage")));
-            this.simpleButton6.Location = new System.Drawing.Point(1120, 166);
-            this.simpleButton6.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton6.Location = new System.Drawing.Point(747, 114);
             this.simpleButton6.Name = "simpleButton6";
-            this.simpleButton6.Size = new System.Drawing.Size(208, 67);
+            this.simpleButton6.Size = new System.Drawing.Size(139, 46);
             this.simpleButton6.TabIndex = 1;
             this.simpleButton6.Text = "NƏĞD";
             this.simpleButton6.Click += new System.EventHandler(this.simpleButton6_Click);
@@ -332,10 +314,9 @@ namespace WindowsFormsApp2
             this.simpleButton7.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton7.Appearance.Options.UseFont = true;
             this.simpleButton7.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton7.ImageOptions.SvgImage")));
-            this.simpleButton7.Location = new System.Drawing.Point(1334, 166);
-            this.simpleButton7.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton7.Location = new System.Drawing.Point(889, 114);
             this.simpleButton7.Name = "simpleButton7";
-            this.simpleButton7.Size = new System.Drawing.Size(208, 67);
+            this.simpleButton7.Size = new System.Drawing.Size(139, 46);
             this.simpleButton7.TabIndex = 1;
             this.simpleButton7.Text = "KART";
             this.simpleButton7.Click += new System.EventHandler(this.simpleButton7_Click);
@@ -345,10 +326,9 @@ namespace WindowsFormsApp2
             this.simpleButton8.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton8.Appearance.Options.UseFont = true;
             this.simpleButton8.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton8.ImageOptions.SvgImage")));
-            this.simpleButton8.Location = new System.Drawing.Point(1548, 166);
-            this.simpleButton8.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton8.Location = new System.Drawing.Point(1032, 114);
             this.simpleButton8.Name = "simpleButton8";
-            this.simpleButton8.Size = new System.Drawing.Size(208, 67);
+            this.simpleButton8.Size = new System.Drawing.Size(139, 46);
             this.simpleButton8.TabIndex = 1;
             this.simpleButton8.Text = "NƏĞD KART";
             this.simpleButton8.Click += new System.EventHandler(this.simpleButton8_Click);
@@ -358,10 +338,9 @@ namespace WindowsFormsApp2
             this.simpleButton9.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton9.Appearance.Options.UseFont = true;
             this.simpleButton9.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton9.ImageOptions.SvgImage")));
-            this.simpleButton9.Location = new System.Drawing.Point(1073, 861);
-            this.simpleButton9.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton9.Location = new System.Drawing.Point(715, 589);
             this.simpleButton9.Name = "simpleButton9";
-            this.simpleButton9.Size = new System.Drawing.Size(170, 69);
+            this.simpleButton9.Size = new System.Drawing.Size(113, 47);
             this.simpleButton9.TabIndex = 1;
             this.simpleButton9.Text = "POS AÇ";
             this.simpleButton9.Click += new System.EventHandler(this.simpleButton9_Click);
@@ -371,10 +350,9 @@ namespace WindowsFormsApp2
             this.simpleButton10.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton10.Appearance.Options.UseFont = true;
             this.simpleButton10.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton10.ImageOptions.SvgImage")));
-            this.simpleButton10.Location = new System.Drawing.Point(1245, 861);
-            this.simpleButton10.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton10.Location = new System.Drawing.Point(830, 589);
             this.simpleButton10.Name = "simpleButton10";
-            this.simpleButton10.Size = new System.Drawing.Size(170, 69);
+            this.simpleButton10.Size = new System.Drawing.Size(113, 47);
             this.simpleButton10.TabIndex = 1;
             this.simpleButton10.Text = "POS BAĞLA";
             this.simpleButton10.Click += new System.EventHandler(this.simpleButton10_Click);
@@ -384,10 +362,9 @@ namespace WindowsFormsApp2
             this.simpleButton11.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton11.Appearance.Options.UseFont = true;
             this.simpleButton11.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton11.ImageOptions.SvgImage")));
-            this.simpleButton11.Location = new System.Drawing.Point(1415, 861);
-            this.simpleButton11.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton11.Location = new System.Drawing.Point(943, 589);
             this.simpleButton11.Name = "simpleButton11";
-            this.simpleButton11.Size = new System.Drawing.Size(170, 69);
+            this.simpleButton11.Size = new System.Drawing.Size(113, 47);
             this.simpleButton11.TabIndex = 1;
             this.simpleButton11.Text = "X HESABAT";
             this.simpleButton11.Click += new System.EventHandler(this.simpleButton11_Click);
@@ -397,10 +374,9 @@ namespace WindowsFormsApp2
             this.simpleButton12.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton12.Appearance.Options.UseFont = true;
             this.simpleButton12.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton12.ImageOptions.SvgImage")));
-            this.simpleButton12.Location = new System.Drawing.Point(1587, 861);
-            this.simpleButton12.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton12.Location = new System.Drawing.Point(1058, 589);
             this.simpleButton12.Name = "simpleButton12";
-            this.simpleButton12.Size = new System.Drawing.Size(170, 69);
+            this.simpleButton12.Size = new System.Drawing.Size(113, 47);
             this.simpleButton12.TabIndex = 1;
             this.simpleButton12.Text = "QAYTARMA";
             this.simpleButton12.Click += new System.EventHandler(this.simpleButton12_Click);
@@ -410,10 +386,9 @@ namespace WindowsFormsApp2
             this.simpleButton13.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton13.Appearance.Options.UseFont = true;
             this.simpleButton13.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton13.ImageOptions.SvgImage")));
-            this.simpleButton13.Location = new System.Drawing.Point(1489, 534);
-            this.simpleButton13.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton13.Location = new System.Drawing.Point(993, 365);
             this.simpleButton13.Name = "simpleButton13";
-            this.simpleButton13.Size = new System.Drawing.Size(141, 75);
+            this.simpleButton13.Size = new System.Drawing.Size(94, 51);
             this.simpleButton13.TabIndex = 1;
             this.simpleButton13.Text = "TƏKRAR QƏBZ";
             // 
@@ -422,10 +397,9 @@ namespace WindowsFormsApp2
             this.simpleButton4.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton4.Appearance.Options.UseFont = true;
             this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
-            this.simpleButton4.Location = new System.Drawing.Point(35, 863);
-            this.simpleButton4.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton4.Location = new System.Drawing.Point(23, 590);
             this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(170, 69);
+            this.simpleButton4.Size = new System.Drawing.Size(113, 47);
             this.simpleButton4.TabIndex = 1;
             this.simpleButton4.Text = "SƏBƏT 1";
             // 
@@ -434,10 +408,9 @@ namespace WindowsFormsApp2
             this.simpleButton14.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton14.Appearance.Options.UseFont = true;
             this.simpleButton14.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton14.ImageOptions.Image")));
-            this.simpleButton14.Location = new System.Drawing.Point(206, 863);
-            this.simpleButton14.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton14.Location = new System.Drawing.Point(137, 590);
             this.simpleButton14.Name = "simpleButton14";
-            this.simpleButton14.Size = new System.Drawing.Size(170, 69);
+            this.simpleButton14.Size = new System.Drawing.Size(113, 47);
             this.simpleButton14.TabIndex = 1;
             this.simpleButton14.Text = "SƏBƏT 2";
             // 
@@ -446,10 +419,9 @@ namespace WindowsFormsApp2
             this.simpleButton15.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton15.Appearance.Options.UseFont = true;
             this.simpleButton15.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton15.ImageOptions.Image")));
-            this.simpleButton15.Location = new System.Drawing.Point(377, 863);
-            this.simpleButton15.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton15.Location = new System.Drawing.Point(251, 590);
             this.simpleButton15.Name = "simpleButton15";
-            this.simpleButton15.Size = new System.Drawing.Size(170, 69);
+            this.simpleButton15.Size = new System.Drawing.Size(113, 47);
             this.simpleButton15.TabIndex = 1;
             this.simpleButton15.Text = "SƏBƏT 3";
             // 
@@ -458,10 +430,9 @@ namespace WindowsFormsApp2
             this.simpleButton16.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton16.Appearance.Options.UseFont = true;
             this.simpleButton16.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton16.ImageOptions.Image")));
-            this.simpleButton16.Location = new System.Drawing.Point(548, 863);
-            this.simpleButton16.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton16.Location = new System.Drawing.Point(365, 590);
             this.simpleButton16.Name = "simpleButton16";
-            this.simpleButton16.Size = new System.Drawing.Size(170, 69);
+            this.simpleButton16.Size = new System.Drawing.Size(113, 47);
             this.simpleButton16.TabIndex = 1;
             this.simpleButton16.Text = "SƏBƏT 4";
             // 
@@ -470,10 +441,9 @@ namespace WindowsFormsApp2
             this.simpleButton17.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton17.Appearance.Options.UseFont = true;
             this.simpleButton17.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton17.ImageOptions.Image")));
-            this.simpleButton17.Location = new System.Drawing.Point(719, 863);
-            this.simpleButton17.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton17.Location = new System.Drawing.Point(479, 590);
             this.simpleButton17.Name = "simpleButton17";
-            this.simpleButton17.Size = new System.Drawing.Size(170, 69);
+            this.simpleButton17.Size = new System.Drawing.Size(113, 47);
             this.simpleButton17.TabIndex = 1;
             this.simpleButton17.Text = "SƏBƏT 5";
             // 
@@ -482,10 +452,9 @@ namespace WindowsFormsApp2
             this.simpleButton18.Appearance.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton18.Appearance.Options.UseFont = true;
             this.simpleButton18.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton18.ImageOptions.Image")));
-            this.simpleButton18.Location = new System.Drawing.Point(890, 863);
-            this.simpleButton18.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton18.Location = new System.Drawing.Point(593, 590);
             this.simpleButton18.Name = "simpleButton18";
-            this.simpleButton18.Size = new System.Drawing.Size(170, 69);
+            this.simpleButton18.Size = new System.Drawing.Size(113, 47);
             this.simpleButton18.TabIndex = 1;
             this.simpleButton18.Text = "SƏBƏT 6";
             // 
@@ -493,10 +462,9 @@ namespace WindowsFormsApp2
             // 
             this.labelControl1.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl1.Appearance.Options.UseFont = true;
-            this.labelControl1.Location = new System.Drawing.Point(82, -5);
-            this.labelControl1.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl1.Location = new System.Drawing.Point(55, -3);
             this.labelControl1.Name = "labelControl1";
-            this.labelControl1.Size = new System.Drawing.Size(237, 24);
+            this.labelControl1.Size = new System.Drawing.Size(143, 16);
             this.labelControl1.TabIndex = 38;
             this.labelControl1.Text = "TARIX ISTIFADECI ADI";
             // 
@@ -504,10 +472,9 @@ namespace WindowsFormsApp2
             // 
             this.labelControl4.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl4.Appearance.Options.UseFont = true;
-            this.labelControl4.Location = new System.Drawing.Point(82, 22);
-            this.labelControl4.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl4.Location = new System.Drawing.Point(55, 15);
             this.labelControl4.Name = "labelControl4";
-            this.labelControl4.Size = new System.Drawing.Size(376, 24);
+            this.labelControl4.Size = new System.Drawing.Size(229, 16);
             this.labelControl4.TabIndex = 38;
             this.labelControl4.Text = "EMELIYYAT SAYI NECENCI SATISDIR";
             // 
@@ -515,10 +482,9 @@ namespace WindowsFormsApp2
             // 
             this.simpleButton19.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton19.Appearance.Options.UseFont = true;
-            this.simpleButton19.Location = new System.Drawing.Point(1215, 534);
-            this.simpleButton19.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton19.Location = new System.Drawing.Point(810, 365);
             this.simpleButton19.Name = "simpleButton19";
-            this.simpleButton19.Size = new System.Drawing.Size(90, 75);
+            this.simpleButton19.Size = new System.Drawing.Size(60, 51);
             this.simpleButton19.TabIndex = 39;
             this.simpleButton19.Text = "7";
             // 
@@ -526,10 +492,9 @@ namespace WindowsFormsApp2
             // 
             this.simpleButton32.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton32.Appearance.Options.UseFont = true;
-            this.simpleButton32.Location = new System.Drawing.Point(1489, 686);
-            this.simpleButton32.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton32.Location = new System.Drawing.Point(993, 469);
             this.simpleButton32.Name = "simpleButton32";
-            this.simpleButton32.Size = new System.Drawing.Size(140, 151);
+            this.simpleButton32.Size = new System.Drawing.Size(93, 103);
             this.simpleButton32.TabIndex = 39;
             this.simpleButton32.Text = "ENTER";
             this.simpleButton32.Click += new System.EventHandler(this.simpleButton32_Click);
@@ -538,10 +503,9 @@ namespace WindowsFormsApp2
             // 
             this.simpleButton33.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton33.Appearance.Options.UseFont = true;
-            this.simpleButton33.Location = new System.Drawing.Point(1306, 534);
-            this.simpleButton33.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton33.Location = new System.Drawing.Point(871, 365);
             this.simpleButton33.Name = "simpleButton33";
-            this.simpleButton33.Size = new System.Drawing.Size(90, 75);
+            this.simpleButton33.Size = new System.Drawing.Size(60, 51);
             this.simpleButton33.TabIndex = 39;
             this.simpleButton33.Text = "8";
             // 
@@ -549,10 +513,9 @@ namespace WindowsFormsApp2
             // 
             this.simpleButton34.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton34.Appearance.Options.UseFont = true;
-            this.simpleButton34.Location = new System.Drawing.Point(1397, 534);
-            this.simpleButton34.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton34.Location = new System.Drawing.Point(931, 365);
             this.simpleButton34.Name = "simpleButton34";
-            this.simpleButton34.Size = new System.Drawing.Size(90, 75);
+            this.simpleButton34.Size = new System.Drawing.Size(60, 51);
             this.simpleButton34.TabIndex = 39;
             this.simpleButton34.Text = "9";
             this.simpleButton34.Click += new System.EventHandler(this.simpleButton34_Click);
@@ -561,10 +524,9 @@ namespace WindowsFormsApp2
             // 
             this.simpleButton35.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton35.Appearance.Options.UseFont = true;
-            this.simpleButton35.Location = new System.Drawing.Point(1215, 762);
-            this.simpleButton35.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton35.Location = new System.Drawing.Point(810, 521);
             this.simpleButton35.Name = "simpleButton35";
-            this.simpleButton35.Size = new System.Drawing.Size(182, 75);
+            this.simpleButton35.Size = new System.Drawing.Size(121, 51);
             this.simpleButton35.TabIndex = 39;
             this.simpleButton35.Text = "0";
             this.simpleButton35.Click += new System.EventHandler(this.simpleButton34_Click);
@@ -573,10 +535,9 @@ namespace WindowsFormsApp2
             // 
             this.simpleButton36.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton36.Appearance.Options.UseFont = true;
-            this.simpleButton36.Location = new System.Drawing.Point(1215, 686);
-            this.simpleButton36.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton36.Location = new System.Drawing.Point(810, 469);
             this.simpleButton36.Name = "simpleButton36";
-            this.simpleButton36.Size = new System.Drawing.Size(90, 75);
+            this.simpleButton36.Size = new System.Drawing.Size(60, 51);
             this.simpleButton36.TabIndex = 39;
             this.simpleButton36.Text = "1";
             this.simpleButton36.Click += new System.EventHandler(this.simpleButton34_Click);
@@ -585,10 +546,9 @@ namespace WindowsFormsApp2
             // 
             this.simpleButton37.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton37.Appearance.Options.UseFont = true;
-            this.simpleButton37.Location = new System.Drawing.Point(1306, 686);
-            this.simpleButton37.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton37.Location = new System.Drawing.Point(871, 469);
             this.simpleButton37.Name = "simpleButton37";
-            this.simpleButton37.Size = new System.Drawing.Size(90, 75);
+            this.simpleButton37.Size = new System.Drawing.Size(60, 51);
             this.simpleButton37.TabIndex = 39;
             this.simpleButton37.Text = "2";
             this.simpleButton37.Click += new System.EventHandler(this.simpleButton34_Click);
@@ -597,10 +557,9 @@ namespace WindowsFormsApp2
             // 
             this.simpleButton38.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton38.Appearance.Options.UseFont = true;
-            this.simpleButton38.Location = new System.Drawing.Point(1397, 686);
-            this.simpleButton38.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton38.Location = new System.Drawing.Point(931, 469);
             this.simpleButton38.Name = "simpleButton38";
-            this.simpleButton38.Size = new System.Drawing.Size(90, 75);
+            this.simpleButton38.Size = new System.Drawing.Size(60, 51);
             this.simpleButton38.TabIndex = 39;
             this.simpleButton38.Text = "3";
             this.simpleButton38.Click += new System.EventHandler(this.simpleButton34_Click);
@@ -609,10 +568,9 @@ namespace WindowsFormsApp2
             // 
             this.simpleButton39.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton39.Appearance.Options.UseFont = true;
-            this.simpleButton39.Location = new System.Drawing.Point(1215, 610);
-            this.simpleButton39.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton39.Location = new System.Drawing.Point(810, 417);
             this.simpleButton39.Name = "simpleButton39";
-            this.simpleButton39.Size = new System.Drawing.Size(90, 75);
+            this.simpleButton39.Size = new System.Drawing.Size(60, 51);
             this.simpleButton39.TabIndex = 39;
             this.simpleButton39.Text = "4";
             this.simpleButton39.Click += new System.EventHandler(this.simpleButton34_Click);
@@ -621,10 +579,9 @@ namespace WindowsFormsApp2
             // 
             this.simpleButton40.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton40.Appearance.Options.UseFont = true;
-            this.simpleButton40.Location = new System.Drawing.Point(1306, 610);
-            this.simpleButton40.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton40.Location = new System.Drawing.Point(871, 417);
             this.simpleButton40.Name = "simpleButton40";
-            this.simpleButton40.Size = new System.Drawing.Size(90, 75);
+            this.simpleButton40.Size = new System.Drawing.Size(60, 51);
             this.simpleButton40.TabIndex = 39;
             this.simpleButton40.Text = "5";
             this.simpleButton40.Click += new System.EventHandler(this.simpleButton34_Click);
@@ -633,10 +590,9 @@ namespace WindowsFormsApp2
             // 
             this.simpleButton41.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton41.Appearance.Options.UseFont = true;
-            this.simpleButton41.Location = new System.Drawing.Point(1397, 610);
-            this.simpleButton41.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton41.Location = new System.Drawing.Point(931, 417);
             this.simpleButton41.Name = "simpleButton41";
-            this.simpleButton41.Size = new System.Drawing.Size(90, 75);
+            this.simpleButton41.Size = new System.Drawing.Size(60, 51);
             this.simpleButton41.TabIndex = 39;
             this.simpleButton41.Text = "6";
             this.simpleButton41.Click += new System.EventHandler(this.simpleButton34_Click);
@@ -645,10 +601,9 @@ namespace WindowsFormsApp2
             // 
             this.simpleButton30.Appearance.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton30.Appearance.Options.UseFont = true;
-            this.simpleButton30.Location = new System.Drawing.Point(1397, 762);
-            this.simpleButton30.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton30.Location = new System.Drawing.Point(931, 521);
             this.simpleButton30.Name = "simpleButton30";
-            this.simpleButton30.Size = new System.Drawing.Size(90, 75);
+            this.simpleButton30.Size = new System.Drawing.Size(60, 51);
             this.simpleButton30.TabIndex = 39;
             this.simpleButton30.Text = ".,";
             this.simpleButton30.Click += new System.EventHandler(this.simpleButton34_Click);
@@ -658,10 +613,9 @@ namespace WindowsFormsApp2
             this.simpleButton20.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.simpleButton20.Appearance.Options.UseFont = true;
             this.simpleButton20.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("simpleButton20.ImageOptions.SvgImage")));
-            this.simpleButton20.Location = new System.Drawing.Point(1348, 458);
-            this.simpleButton20.Margin = new System.Windows.Forms.Padding(4);
+            this.simpleButton20.Location = new System.Drawing.Point(899, 313);
             this.simpleButton20.Name = "simpleButton20";
-            this.simpleButton20.Size = new System.Drawing.Size(140, 75);
+            this.simpleButton20.Size = new System.Drawing.Size(93, 51);
             this.simpleButton20.TabIndex = 39;
             this.simpleButton20.Text = "SIL";
             this.simpleButton20.Click += new System.EventHandler(this.simpleButton34_Click);
@@ -670,61 +624,54 @@ namespace WindowsFormsApp2
             // 
             this.labelControl5.Appearance.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelControl5.Appearance.Options.UseFont = true;
-            this.labelControl5.Location = new System.Drawing.Point(80, 54);
-            this.labelControl5.Margin = new System.Windows.Forms.Padding(4);
+            this.labelControl5.Location = new System.Drawing.Point(53, 37);
             this.labelControl5.Name = "labelControl5";
-            this.labelControl5.Size = new System.Drawing.Size(146, 24);
+            this.labelControl5.Size = new System.Drawing.Size(92, 16);
             this.labelControl5.TabIndex = 38;
             this.labelControl5.Text = "EMELIYYAT №";
             // 
             // textEdit11
             // 
-            this.textEdit11.Location = new System.Drawing.Point(233, 52);
-            this.textEdit11.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit11.Location = new System.Drawing.Point(155, 36);
             this.textEdit11.Name = "textEdit11";
-            this.textEdit11.Size = new System.Drawing.Size(192, 26);
+            this.textEdit11.Size = new System.Drawing.Size(128, 20);
             this.textEdit11.TabIndex = 40;
             // 
             // gridControl1
             // 
-            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
-            this.gridControl1.Location = new System.Drawing.Point(35, 230);
+            this.gridControl1.Location = new System.Drawing.Point(23, 157);
             this.gridControl1.MainView = this.gridView1;
-            this.gridControl1.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(835, 610);
+            this.gridControl1.Size = new System.Drawing.Size(557, 417);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
-            this.gridView1.DetailHeight = 512;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.FocusedRowChanged += new DevExpress.XtraGrid.Views.Base.FocusedRowChangedEventHandler(this.gridView1_FocusedRowChanged);
             // 
             // textEdit3
             // 
-            this.textEdit3.Location = new System.Drawing.Point(826, 50);
-            this.textEdit3.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit3.Location = new System.Drawing.Point(551, 34);
             this.textEdit3.Name = "textEdit3";
-            this.textEdit3.Size = new System.Drawing.Size(627, 26);
+            this.textEdit3.Size = new System.Drawing.Size(418, 20);
             this.textEdit3.TabIndex = 41;
             // 
             // textEdit4
             // 
-            this.textEdit4.Location = new System.Drawing.Point(233, 87);
-            this.textEdit4.Margin = new System.Windows.Forms.Padding(4);
+            this.textEdit4.Location = new System.Drawing.Point(155, 60);
             this.textEdit4.Name = "textEdit4";
-            this.textEdit4.Size = new System.Drawing.Size(192, 26);
+            this.textEdit4.Size = new System.Drawing.Size(128, 20);
             this.textEdit4.TabIndex = 42;
             // 
             // POS
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1944, 1059);
+            this.ClientSize = new System.Drawing.Size(1305, 692);
             this.Controls.Add(this.textEdit4);
             this.Controls.Add(this.textEdit3);
             this.Controls.Add(this.gridControl1);
@@ -770,7 +717,6 @@ namespace WindowsFormsApp2
             this.Controls.Add(this.simpleButton6);
             this.Controls.Add(this.simpleButton1);
             this.Controls.Add(this.textEdit2);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "POS";
             this.Text = "POS";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

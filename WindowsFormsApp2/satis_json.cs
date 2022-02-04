@@ -26,8 +26,74 @@ namespace WindowsFormsApp2
         string insert_pos_satis_check_json = "json_to_check_pos";
         string insert_pos_gaytarma_manual_ = "insert_pos_gaytarma_manual";
         string return_gaytarma_ = "return_gaytarma";
+        string del_migdar = "delete_calaculation_";
+        string update_satis_giymeti = "update_giymet_calaculation_";
+        string insert_pos_guzest = "pos_guzest_insert";
 
+        public void pos_guzest_insert_(string  emeliyyat_nomre_,int mal_details_id_,string endirim_faiz_,
+	string  endirim_azn_)
+        {
+            // Create ADO.NET objects.
+            SqlConnection con = new SqlConnection(Properties.Settings.Default.SqlCon);
+            SqlCommand cmd = new SqlCommand(insert_pos_guzest, con);
+            // Configure command and add input parameters.
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlParameter param;
+            param = cmd.Parameters.Add("@emeliyyat_nomre", SqlDbType.NVarChar,100);
+            param.Value = emeliyyat_nomre_;
 
+            param = cmd.Parameters.Add("@mal_details_id", SqlDbType.Int);
+            param.Value = mal_details_id_;
+
+            param = cmd.Parameters.Add("@endirim_faiz", SqlDbType.NVarChar,100);
+            param.Value = endirim_faiz_;
+
+            param = cmd.Parameters.Add("@endirim_azn", SqlDbType.NVarChar, 100);
+            param.Value = endirim_azn_;
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+        }
+
+        public void update_satis_giymeti_( int mal_details_id_,decimal giymet_)
+        {
+            // Create ADO.NET objects.
+            SqlConnection con = new SqlConnection(Properties.Settings.Default.SqlCon);
+            SqlCommand cmd = new SqlCommand(update_satis_giymeti, con);
+            // Configure command and add input parameters.
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlParameter param;
+            param = cmd.Parameters.Add("@mal_details_id", SqlDbType.Int);
+            param.Value = mal_details_id_;
+
+            param = cmd.Parameters.Add("@giymet", SqlDbType.Decimal);
+            param.Value = giymet_;
+
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+        }
+        public void del_migdar_calculation(int mal_id_,int say_)
+        {
+            // Create ADO.NET objects.
+            SqlConnection con = new SqlConnection(Properties.Settings.Default.SqlCon);
+            SqlCommand cmd = new SqlCommand(del_migdar, con);
+            // Configure command and add input parameters.
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlParameter param;
+            param = cmd.Parameters.Add("@mal_details_id", SqlDbType.Int);
+            param.Value = mal_id_;
+
+            param = cmd.Parameters.Add("@say", SqlDbType.Int);
+            param.Value = say_;
+
+            con.Open();
+            cmd.ExecuteNonQuery();
+            con.Close();
+
+        }
         public string returnjson_gaytarma( string emeliyyat_nomre_)
         {
             // Create ADO.NET objects.
